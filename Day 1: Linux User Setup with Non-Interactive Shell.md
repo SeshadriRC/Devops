@@ -1,4 +1,6 @@
-Got it 👍
+
+To accommodate the backup agent tool's specifications, the system admin team at xFusionCorp Industries requires the creation of a user with a non-interactive shell. Here's your task: Create a user named mark with a non-interactive shell on App Server 3.
+
 
 Since you need to create a user **mark** with a **non-interactive shell**, the usual approach is to assign a shell like `/sbin/nologin` or `/bin/false`. This prevents the user from logging in interactively, but still allows processes/services to run under that user if needed.
 
