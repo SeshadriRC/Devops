@@ -8,3 +8,71 @@ Key pair type must be rsa.
 
 The private key file should be saved under /home/bob/devops-kp.pem.
 The Terraform working directory is /home/bob/terraform. Create the main.tf file (do not create a different .tf file) to accomplish this task.
+
+## Answer
+
+Alright 🚀 Let’s build this step by step. You need a **Terraform config** (`main.tf`) to create an **AWS key pair** named `devops-kp`, with **RSA type**, and store the **private key** at `/home/bob/devops-kp.pem`.
+
+Here’s what your `main.tf` (inside `/home/bob/terraform/`) should look like:
+
+```hcl
+
+# Generate RSA private key
+resource "tls_private_key" "devops_key" {
+  algorithm = "RSA"
+  rsa_bits  = 4096
+}
+
+# Create AWS key pair using the public key
+resource "aws_key_pair" "devops_kp" {
+  key_name   = "devops-kp"
+  public_key = tls_private_key.devops_key.public_key_openssh
+}
+
+# Save the private key to a local file
+resource "local_file" "private_key" {
+  content  = tls_private_key.devops_key.private_key_pem
+  filename = "/home/bob/devops-kp.pem"
+}
+```
+
+---
+
+### Steps to run:
+
+1. Go to the working directory:
+
+   ```bash
+   cd /home/bob/terraform
+   ```
+
+2. Initialize Terraform:
+
+   ```bash
+   terraform init
+   ```
+
+3. Plan the execution:
+
+   ```bash
+   terraform plan
+   ```
+
+4. Apply the config:
+
+   ```bash
+   terraform apply -auto-approve
+   ```
+
+---
+
+✅ After this:
+
+* An AWS key pair named **`devops-kp`** will be created.
+* The private key will be saved at **`/home/bob/devops-kp.pem`**.
+* You can then use it for SSH access to EC2 instances.
+
+
+---
+
+Do you want me to also add an **output block** in `main.tf` so that Terraform prints the private key location (or public key) after apply?
