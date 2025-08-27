@@ -7,7 +7,7 @@ Create a deployment named nginx to deploy the application nginx using the image 
 kubectl create deployment nginx --image=nginx:latest --dry-run=client -o yaml
 kubectl create deployment nginx --image=nginx:latest
 
-
+``
 thor@jumphost ~$ kubectl create deployment nginx --image=nginx:latest --dry-run=client -o yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -31,5 +31,6 @@ spec:
       containers:
       - image: nginx:latest
         name: nginx
+``
         resources: {}
 status: {}
