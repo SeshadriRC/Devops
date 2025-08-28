@@ -50,11 +50,7 @@ Here’s the step-by-step:
    sudo systemctl restart sshd
    ```
 
-   or (depending on distro):
-
-   ```bash
-   sudo service sshd restart
-   ```
+  
 
 5. **Verify configuration**
    Check that root login is disabled:
