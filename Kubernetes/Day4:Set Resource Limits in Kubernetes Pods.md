@@ -30,6 +30,8 @@ spec:
           cpu: "100m"
 ```
 
+```
 kubectl apply -f pod.yaml
 kubectl get pods
 kubectl describe pod <pod_name>
+```
