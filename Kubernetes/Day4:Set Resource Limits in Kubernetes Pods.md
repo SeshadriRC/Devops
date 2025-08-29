@@ -10,6 +10,7 @@ Note: The kubectl utility on jump_host is configured to operate with the Kuberne
 
 ## Solution
 
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -27,7 +28,7 @@ spec:
         limits:
           memory: "20Mi"
           cpu: "100m"
-
+```
 
 kubectl apply -f pod.yaml
 kubectl get pods
