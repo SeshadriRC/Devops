@@ -12,9 +12,14 @@ Disregard the current status of SELinux via the command line; the final status a
 ```
 Login as root
 yum -y install selinux*
-sudo apt-get update
-sudo apt-get install -y selinux selinux-basics selinux-policy-default auditd
-yum list available selinux\* -> list the available packages
+
+yum list available selinux\* --> list the available packages
 rpm -qa | grep selinux -> list the installed packages
-yum -y install selinux* --allowerasing
+
+yum -y install selinux* --allowerasing   --> we can use this command or below one
+yum -y install selinux* --skip-broken
+
+sestatus --> check the selinux status
+
+cat /etc/selinux/config | grep SELINUX --> ( change from enforcing to disabled )
 ```
