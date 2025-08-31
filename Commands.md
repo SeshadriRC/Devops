@@ -1,6 +1,6 @@
 
-[Kubernetes](#kubernetes)
-[Linux](#linux)
+- [Kubernetes](#kubernetes)
+- [Linux](#linux)
 
 ## Kubernetes
 
