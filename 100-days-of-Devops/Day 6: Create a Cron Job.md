@@ -6,3 +6,10 @@ b. Add a cron */5 * * * * echo hello > /tmp/cron_text for root user.
 
 ## Solution
 
+```
+[root@stapp03 ~]# crontab -e
+no crontab for root - using an empty one
+crontab: installing new crontab
+[root@stapp03 ~]# crontab -l
+*/5 * * * * echo hello > /tmp/cron_text
+```
