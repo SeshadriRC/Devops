@@ -13,4 +13,9 @@ Note: The kubectl utility on jump_host is set up to operate with the Kubernetes 
 kubectl get deploy
 kubectl get pods
 
+kubectl set image deployment nginx-deployment nginx-container=nginx:1.19
+- kubectl set image deployment <deployment-name> <container-name>=<new-container-name with tag>
+kubectl rollout status deployment/nginx-deployment
+
+
 ```
