@@ -1,14 +1,9 @@
 
-- [Crontab](#crontab)
+
 - [Kubernetes](#kubernetes)
 - [Linux](#linux)
 
-## Crontab
 
-```
-crontab -l
-crontab -e
-```
 
 ## Kubernetes
 
@@ -19,6 +14,16 @@ kubectl config view --minify --output 'jsonpath={..namespace}'
 kubectl config set-context --current --namespace=<your-namespace-name>
 
 ## Linux
+
+**Crontab**
+
+```
+crontab -e
+*/5 * * * * echo hello > /tmp/cron_text
+
+crontab -l
+
+```
 
 **Yum**
 
