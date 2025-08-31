@@ -24,6 +24,12 @@ crontab -e
 crontab -l
 
 ```
+**Systemctl**
+
+```
+systemctl status crond.service
+
+```
 
 **Yum**
 
@@ -33,12 +39,4 @@ yum -y install selinux* --skip-broken
 yum -y install cronie
 
 ```
-
-**Systemctl**
-
-```
-systemctl status crond.service
-
-```
-
 
