@@ -13,6 +13,17 @@ kubectl config view --minify --output 'jsonpath={..namespace}'
 **set to ns**
 kubectl config set-context --current --namespace=<your-namespace-name>
 
+**Deployment**
+```
+kubectl get deploy
+
+kubectl get pods
+
+kubectl set image deployment nginx-deployment nginx-container=nginx:1.19
+- kubectl set image deployment <deployment-name> <container-name>=<new-container-name with tag>
+
+kubectl rollout status deployment/nginx-deployment
+```
 ## Linux
 
 **Crontab**
