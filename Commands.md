@@ -24,7 +24,10 @@ kubectl get pods
 kubectl set image deployment nginx-deployment nginx-container=nginx:1.19
 - kubectl set image deployment <deployment-name> <container-name>=<new-container-name with tag>
 
+kubectl rollout undo deployment  nginx-deployment
+
 kubectl rollout status deployment/nginx-deployment
+
 ```
 ## Linux
 
@@ -53,3 +56,10 @@ yum -y install cronie
 
 ```
 
+**SSH**
+
+```
+ssh-keygen -t rsa
+ssh-copy-id tony@stapp01
+
+```
