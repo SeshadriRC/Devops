@@ -40,12 +40,22 @@ crontab -e
 crontab -l
 
 ```
+
+**SSH**
+
+```
+ssh-keygen -t rsa
+ssh-copy-id tony@stapp01
+
+```
+
 **Systemctl**
 
 ```
 systemctl status crond.service
 
 ```
+
 
 **Yum**
 
@@ -56,10 +66,3 @@ yum -y install cronie
 
 ```
 
-**SSH**
-
-```
-ssh-keygen -t rsa
-ssh-copy-id tony@stapp01
-
-```
