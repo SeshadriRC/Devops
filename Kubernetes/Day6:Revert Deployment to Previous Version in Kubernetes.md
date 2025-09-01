@@ -4,6 +4,8 @@ There exists a deployment named nginx-deployment; initiate a rollback to the pre
 
 Note: The kubectl utility on jump_host is configured to interact with the Kubernetes cluster.
 
+https://www.nbtechsupport.co.in/2021/03/rollback-deployment-in-kubernetes.html
+
 ## Solution
 
 ```
