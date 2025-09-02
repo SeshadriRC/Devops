@@ -7,6 +7,6 @@ Install ansible version 4.7.0 on Jump host using pip3 only. Make sure Ansible bi
 ```
 python3 -m pip -V  --> we are checking whether pip is available or not
 python3 -m pip install --upgrade pip ( upgrade the pip verson )
-python3 -m pip install  ansible==4.7.0
+python3 -m pip install  ansible==4.7.0  ( install the ansible )
 ansible --version
 ```
