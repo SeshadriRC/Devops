@@ -15,22 +15,26 @@ Note: The kubectl utility on jump_host is set up to interact with the Kubernetes
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: my-replicaset
+  name: httpd-replicaset
   labels:
-    app: my-app
+    app: httpd_app
+    type: front-end
 spec:
-  replicas: 3 # Desired number of Pod replicas
+  replicas: 4 # Desired number of Pod replicas
   selector:
     matchLabels:
-      app: my-app # Labels used to select Pods managed by this ReplicaSet
+      app: httpd_app # Labels used to select Pods managed by this ReplicaSet
   template: # Pod template for creating new Pods
     metadata:
       labels:
-        app: my-app
+        app: httpd_app
+        type: front-end
     spec:
       containers:
-      - name: my-container
-        image: nginx:latest
-        ports:
-        - containerPort: 80
+      - name: httpd-container
+        image: httpd:latest
+```
+```
+kubectl create -f replica.yaml
+
 ```
