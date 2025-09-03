@@ -4,17 +4,8 @@
 - [Linux](#linux)
 
 
-
 ## Kubernetes
 
-**view current ns**
-```
-kubectl config view --minify --output 'jsonpath={..namespace}'  
-```
-**set to ns**
-```
-kubectl config set-context --current --namespace=<your-namespace-name>
-```
 **Deployment**
 ```
 kubectl get deploy
@@ -29,6 +20,18 @@ kubectl rollout undo deployment  nginx-deployment
 kubectl rollout status deployment/nginx-deployment
 
 ```
+
+**Namespace**
+
+***view current ns***
+```
+kubectl config view --minify --output 'jsonpath={..namespace}'  
+```
+***set current ns***
+```
+kubectl config set-context --current --namespace=<your-namespace-name>
+```
+
 ## Linux
 
 **Crontab**
