@@ -6,6 +6,12 @@
 
 ## Kubernetes
 
+**Cronjob**
+
+```
+kubectl get cronjob
+```
+
 **Deployment**
 ```
 kubectl get deploy
@@ -42,6 +48,13 @@ crontab -e
 
 crontab -l
 
+```
+
+**List**
+
+```
+ls
+ls -ld   (for directory)
 ```
 
 **SSH**
