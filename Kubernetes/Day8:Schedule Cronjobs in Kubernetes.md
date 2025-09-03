@@ -14,3 +14,27 @@ Ensure the restart policy is OnFailure.
 
 ## Solution
 
+```yaml
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: nautilus
+spec:
+  schedule: "*/7 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: cron-nautilus
+            image: httpd:latest
+            command:
+            - /bin/sh
+            - -c
+            - echo Welcome to xfusioncorp!
+          restartPolicy: OnFailure
+```
+```
+kubectl get cj
+kubectl get pod
+```
