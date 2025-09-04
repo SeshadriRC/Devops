@@ -64,6 +64,11 @@ ssh-keygen -t rsa
 ssh-copy-id tony@stapp01
 
 ```
+**SCP**
+```
+scp /backup/xfusioncorp_blog.zip clint@stbkp01.stratos.xfusioncorp.com:/backup
+```
+
 
 **Systemctl**
 
