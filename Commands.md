@@ -82,3 +82,11 @@ yum -y install cronie
 
 ```
 
+**zip**
+
+```
+zip -r /backup/xfusioncorp_blog.zip /var/www/html/blog
+unzip -l xfusioncorp_blog.zi
+```
+
+
