@@ -105,7 +105,7 @@ yum list available selinux\* --> list the available packages
 
 ```
 
-**zip**
+**Zip**
 
 ```
 zip -r /backup/xfusioncorp_blog.zip /var/www/html/blog
