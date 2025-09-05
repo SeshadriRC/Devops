@@ -37,6 +37,16 @@ kubectl config view --minify --output 'jsonpath={..namespace}'
 ```
 kubectl config set-context --current --namespace=<your-namespace-name>
 ```
+**Pod**
+***Login to container***
+
+```
+kubectl exec -it -n <ns> <pod> -- /bin/bash                       [ if single container ]
+kubectl exec -it -n <ns> <pod> -c <container-name> -- /bin/sh     [ if multiple container available ]
+kubectl exec -n nautilus <ns> <pod> -- cat /opt/data/time/time-check.log  [ Execute a command ]
+
+```
+
 
 ## Linux
 
