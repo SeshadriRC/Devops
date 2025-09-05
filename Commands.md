@@ -50,6 +50,12 @@ crontab -l
 
 ```
 
+**Curl**
+
+```
+ curl -ivk http://stapp02:5001
+```
+
 **List**
 
 ```
@@ -84,6 +90,7 @@ systemctl status crond.service
 rpm -qa | grep selinux
 yum -y install selinux* --skip-broken
 yum -y install cronie
+yum list available selinux\* --> list the available packages
 
 ```
 
