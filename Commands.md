@@ -38,6 +38,7 @@ kubectl config view --minify --output 'jsonpath={..namespace}'
 kubectl config set-context --current --namespace=<your-namespace-name>
 ```
 **Pod**
+
 ***Login to container***
 
 ```
