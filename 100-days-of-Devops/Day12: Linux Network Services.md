@@ -27,6 +27,8 @@ vi /etc/httpd/conf/httpd.conf
 Firewall check
 sudo iptables -L -n
 sudo iptables -I INPUT -p tcp --dport 8086 -j ACCEPT
+sudo iptables -D INPUT 1
+sudo iptables -L INPUT -n --line-numbers
 
 ```
 **Errors**
