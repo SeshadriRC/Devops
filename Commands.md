@@ -86,6 +86,7 @@ telnet stapp01.stratos.xfusioncorp.com 5000
 netstat -tulnp
 
 Allow the specific port
+========================
 sudo iptables -L -n
 sudo iptables -I INPUT -p tcp --dport 8086 -j ACCEPT
 sudo iptables -D INPUT 1
