@@ -39,7 +39,7 @@ kubectl config set-context --current --namespace=<your-namespace-name>
 ```
 **Pod**
 
-***Edit Pod**
+**Edit Pod**
 ```
 kubectl edit pod <pod-name>
 ```
@@ -51,6 +51,12 @@ kubectl exec -it -n <ns> <pod> -- /bin/bash                       [ if single co
 kubectl exec -it -n <ns> <pod> -c <container-name> -- /bin/sh     [ if multiple container available ]
 kubectl exec -n nautilus <ns> <pod> -- cat /opt/data/time/time-check.log  [ Execute a command ]
 
+```
+
+**Yaml**
+
+```
+kubectl get pod nginx-phpfpm -o yaml  > /tmp/nginx.yaml
 ```
 
 
