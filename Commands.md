@@ -39,6 +39,13 @@ kubectl config set-context --current --namespace=<your-namespace-name>
 ```
 **Pod**
 
+***get pods***
+
+```
+kubectl get pods
+kubectl get pods -l app=orage-app-t4q6      [using label]
+```
+
 ***Edit Pod***
 ```
 kubectl edit pod <pod-name>
