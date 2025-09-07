@@ -39,7 +39,7 @@ kubectl config set-context --current --namespace=<your-namespace-name>
 ```
 **Pod**
 
-**Edit Pod**
+***Edit Pod***
 ```
 kubectl edit pod <pod-name>
 ```
@@ -50,6 +50,14 @@ kubectl edit pod <pod-name>
 kubectl exec -it -n <ns> <pod> -- /bin/bash                       [ if single container ]
 kubectl exec -it -n <ns> <pod> -c <container-name> -- /bin/sh     [ if multiple container available ]
 kubectl exec -n nautilus <ns> <pod> -- cat /opt/data/time/time-check.log  [ Execute a command ]
+
+```
+
+***copy file to container***
+
+```
+kubectl cp  /dir1/file.txt <pod-name>:/dir2/dir3 -c <container-name>
+ --kubectl cp  /home/thor/index.php  nginx-phpfpm:/var/www/html -c nginx-container
 
 ```
 
