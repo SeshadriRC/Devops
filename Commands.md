@@ -135,12 +135,16 @@ systemctl status crond.service
 ```
 
 
-**Yum**
+**RPM and Yum**
 
 ```
 rpm -qa | grep selinux
+sudo rpm -i <package-name>      [install]
+sudo rpm -e <package-name>      [uninstall]
 yum -y install selinux* --skip-broken
+
 yum -y install cronie
+sudo yum remove -y <package>
 yum list available selinux\* --> list the available packages
 
 ```
