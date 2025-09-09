@@ -112,6 +112,24 @@ sudo iptables -L -n
 sudo iptables -I INPUT -p tcp --dport 8086 -j ACCEPT
 sudo iptables -D INPUT 1
 sudo iptables -L INPUT -n --line-numbers
+
+Route table
+==========
+route
+
+show the ip address
+==================
+ip a
+
+assign ip address to host
+=========================
+sudo ip addr add 172.16.238.15/24 dev eth0
+
+Add ip to route table
+=====================
+sudo ip route add 172.16.238.0/24 via 172.16.239.1
+[https://github.com/SeshadriRC/Devops/blob/main/Explanations/Adding%20a%20static%20route.md]
+
 ```
 
 **SSH**
