@@ -161,7 +161,7 @@ scp /backup/xfusioncorp_blog.zip clint@stbkp01.stratos.xfusioncorp.com:/backup
 
 **Systemctl**
 
-- https://github.com/SeshadriRC/Devops/blob/main/Explanations/sysytemctl.md
+- [Systemctl](https://github.com/SeshadriRC/Devops/blob/main/Explanations/systemctl.md)
 
 ```
 systemctl status crond.service
