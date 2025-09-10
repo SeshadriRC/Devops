@@ -135,7 +135,9 @@ sudo ip route add 172.16.238.0/24 via 172.16.239.1
 ```
 
 **Nginx**
-- https://github.com/SeshadriRC/Devops/blob/main/Explanations/nginx.md#nginx-t
+
+- [Nginx (-t)](https://github.com/SeshadriRC/Devops/blob/main/Explanations/nginx.md#nginx-t)
+
 
 ```
 nginx -t
