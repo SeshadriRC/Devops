@@ -1,3 +1,6 @@
+
+## Nginx(-t)
+
 `nginx -t` is a **test command** for Nginx.
 
 It checks the **syntax** and **validity** of the Nginx configuration files before you reload or restart the service.
