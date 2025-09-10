@@ -105,6 +105,8 @@ ls -ld   (for directory)
 ```
 telnet stapp01.stratos.xfusioncorp.com 5000
 netstat -tulnp
+(or)
+ss -tulnp|grep httpd
 
 Allow the specific port
 ========================
@@ -132,6 +134,14 @@ sudo ip route add 172.16.238.0/24 via 172.16.239.1
 
 ```
 
+**Nginx**
+- https://github.com/SeshadriRC/Devops/blob/main/Explanations/nginx.md#nginx-t
+
+```
+nginx -t
+
+```
+
 **SSH**
 
 ```
@@ -146,6 +156,8 @@ scp /backup/xfusioncorp_blog.zip clint@stbkp01.stratos.xfusioncorp.com:/backup
 
 
 **Systemctl**
+
+- https://github.com/SeshadriRC/Devops/blob/main/Explanations/sysytemctl.md
 
 ```
 systemctl status crond.service
