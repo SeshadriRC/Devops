@@ -1,5 +1,6 @@
 
 
+
 - [Kubernetes](#kubernetes)
 - [Linux](#linux)
 
@@ -101,7 +102,7 @@ ls -ld   (for directory)
 ```
 
 **Network**
-- [Add ip]([https://github.com/SeshadriRC/Devops/blob/main/Explanations/Adding%20a%20static%20route.md])
+- [Add-ip]([https://github.com/SeshadriRC/Devops/blob/main/Explanations/Adding%20a%20static%20route.md])
 
 ```
 telnet stapp01.stratos.xfusioncorp.com 5000
