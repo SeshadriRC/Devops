@@ -3,6 +3,7 @@
 
 - [Kubernetes](#kubernetes)
 - [Linux](#linux)
+- [Git](#git)
 
 
 ## Kubernetes
@@ -190,4 +191,10 @@ zip -r /backup/xfusioncorp_blog.zip /var/www/html/blog
 unzip -l xfusioncorp_blog.zi
 ```
 
+## Git
 
+**Git log**
+```
+git log --name-only
+git log --graph --decorate
+```
