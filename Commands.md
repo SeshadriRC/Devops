@@ -193,6 +193,23 @@ unzip -l xfusioncorp_blog.zi
 
 ## Git
 
+**Git config**
+```
+git config user.email
+git config user.name "max"
+```
+
+**Git Fetch**
+```
+git fetch origin master
+git merge origin/master
+```
+
+**Git remote**
+```
+git remote -v
+```
+
 **Git log**
 ```
 git log --name-only
