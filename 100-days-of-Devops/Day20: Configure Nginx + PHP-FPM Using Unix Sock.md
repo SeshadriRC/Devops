@@ -17,6 +17,8 @@ NOTE: We have copied two files, index.php and info.php, under /var/www/html as p
 
 ## Solution
 
+- https://tundedamian.medium.com/day-20-of-100-days-of-devops-deploying-a-php-application-with-nginx-and-php-fpm-ac9e0111d88a
+
 ```
 yum install -y nginx
 systemctl enable nginx
