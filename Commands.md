@@ -193,6 +193,10 @@ unzip -l xfusioncorp_blog.zi
 
 ## Git
 
+**Git clone**
+```
+git clone /opt/blog.git /usr/src/kodekloudrepos/blog
+```
 **Git config**
 ```
 git config user.email
