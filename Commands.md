@@ -8,11 +8,17 @@
 ## Docker
 
 ```
+docker images
+
 docker ps
 docker ps -a
 
-docker rm <docker-id>
+docker rm <docker-id>      [removing containers]
 docker rm <docker-id> <docker-id1>
+
+docker rmi <image-name>    [removing image]
+
+docker pull <image-name>
 
 docker run <image-name>
 docker run -d <image> sleep 20000    [ it is in seconds, -d indicates its in background ]
