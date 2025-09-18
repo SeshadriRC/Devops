@@ -24,7 +24,10 @@ docker pull <image-name>
 
 docker run <image-name>
 docker run -d <image> sleep 20000    [ it is in seconds, -d indicates its in background ]
+docker run -d --name <container-name> nginx:1.14-alpine    [name the container]
 docker run -it <image> bash       [it will login inside container]
+
+
 
 docker stop <container-name> 
 docker stop <container-name1> <container-name2> <container-name3>
