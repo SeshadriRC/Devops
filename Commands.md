@@ -30,7 +30,7 @@ docker run -it <image> bash       [it will login inside container]
 docker run -v /opt/datadir:/var/lib/mysql mysql          [ volume mapping, here /opt/datadir is outside container directory and /var/lib is inside container ]
 docker run -p 80:5000 <image-name>    [ port mapping, 80 - host port, 5000 - container port ]
 
-
+docker logs <container-name>
 
 docker stop <container-name> 
 docker stop <container-name1> <container-name2> <container-name3>
