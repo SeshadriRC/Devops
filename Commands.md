@@ -26,6 +26,8 @@ docker run <image-name>
 docker run -d <image> sleep 20000    [ it is in seconds, -d indicates its in background ]
 docker run -d --name <container-name> nginx:1.14-alpine    [name the container]
 docker run -it <image> bash       [it will login inside container]
+docker run -v /opt/datadir:/var/lib/mysql mysql          [ volume mapping, here /opt/datadir is outside container directory and /var/lib is inside container ]
+docker run -p 80:5000 <image-name>    [ port mapping, 80 - host port, 5000 - container port ]
 
 
 
