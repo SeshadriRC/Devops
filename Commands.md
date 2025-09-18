@@ -8,6 +8,8 @@
 ## Docker
 
 ```
+docker attach <container-id>
+
 docker exec <container-id> cat /etc/*release*    [run the command inside running container]
 
 docker images
