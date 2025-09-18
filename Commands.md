@@ -1,10 +1,25 @@
 
 
-
+- [Docker](#docker)
 - [Kubernetes](#kubernetes)
 - [Linux](#linux)
 - [Git](#git)
 
+## Docker
+
+```
+docker ps
+docker ps -a
+
+docker rm <docker-id>
+docker rm <docker-id> <docker-id1>
+
+docker run <image-name>
+docker run -d <image> sleep 20000    [ it is in seconds, -d indicates its in background ]
+docker run -it <image> bash       [it will login inside container]
+
+docker stop <container-name>
+```
 
 ## Kubernetes
 
