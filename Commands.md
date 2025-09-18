@@ -12,6 +12,7 @@ docker exec <container-id> cat /etc/*release*    [run the command inside running
 
 docker images
 
+docker inspect <container-name>      [ it will show the details of the container ]
 docker ps
 docker ps -a
 
