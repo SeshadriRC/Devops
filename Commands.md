@@ -10,7 +10,9 @@
 ```
 docker attach <container-id>
 
-docker build . -t <appname>
+docker build . -t <accountname>/<appname>
+docker login       [then automatically it will ask username and password]
+docker push <accountname>/<appname>
 
 docker exec <container-id> cat /etc/*release*    [run the command inside running container]
 
@@ -36,6 +38,8 @@ docker run -p 80:5000 <image-name>    [ port mapping, 80 - host port, 5000 - con
 
 
 docker logs <container-name>
+
+
 
 docker stop <container-name> 
 docker stop <container-name1> <container-name2> <container-name3>
