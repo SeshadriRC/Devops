@@ -6,6 +6,8 @@ Create a new branch nautilus in /usr/src/kodekloudrepos/demo repo from master an
 
 ## Solution
 
+- https://www.nbtechsupport.co.in/2021/07/git-merge-branches.html
+
 ```
 cd /usr/src/kodekloudrepos/demo
 git checkout -b nautilus
