@@ -234,6 +234,12 @@ unzip -l xfusioncorp_blog.zi
 
 ## Git
 
+**Git branch**
+```
+git branch
+git branch -vv
+```
+
 **Git clone**
 ```
 git clone /opt/blog.git /usr/src/kodekloudrepos/blog
