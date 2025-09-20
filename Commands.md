@@ -27,6 +27,10 @@ docker -H=10.123.2.1:2375 run nginx
 ```
 docker images
 ```
+**Docker Inspect**
+```
+docker inspect <container-name>      [ it will show the details of the container ]
+```
 **Docker Login**
 ```
 docker login       [then automatically it will ask username and password]
@@ -46,10 +50,7 @@ docker ps
 docker ps -a
 
 ```
-```
-docker inspect <container-name>      [ it will show the details of the container ]
 
-```
 **Docker Run**
 ```
 docker run <image-name>
