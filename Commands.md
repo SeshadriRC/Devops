@@ -7,11 +7,19 @@
 
 ## Docker
 
+**Docker Attach**
 ```
 docker attach <container-id>
-
+```
+**Docker Build**
+```
 docker build . -t <accountname>/<appname>
+```
+**Docker Login**
+```
 docker login       [then automatically it will ask username and password]
+```
+```
 docker push <accountname>/<appname>
 
 docker exec <container-id> cat /etc/*release*    [run the command inside running container]
