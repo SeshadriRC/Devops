@@ -253,6 +253,8 @@ git merge origin/master
 **Git remote**
 ```
 git remote -v
+git remote add dev_apps /opt/xfusioncorp_apps.git
+git push -u dev_apps  master
 ```
 
 **Git log**
