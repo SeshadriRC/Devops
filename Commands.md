@@ -15,9 +15,17 @@ docker attach <container-id>
 ```
 docker build . -t <accountname>/<appname>
 ```
+**Docker exec**
+```
+docker exec <container-id> cat /etc/*release*    [run the command inside running container]
+```
 **Docker Host**
 ```
 docker -H=10.123.2.1:2375 run nginx
+```
+**Docker Images**
+```
+docker images
 ```
 **Docker Login**
 ```
@@ -28,21 +36,10 @@ docker login       [then automatically it will ask username and password]
 docker push <accountname>/<appname>
 docker pull <image-name>
 ```
-**Docker exec**
 ```
-docker exec <container-id> cat /etc/*release*    [run the command inside running container]
-```
-```
-docker images
-
 docker inspect <container-name>      [ it will show the details of the container ]
 docker ps
 docker ps -a
-
-docker rm <docker-id>      [removing containers]
-docker rm <docker-id> <docker-id1>
-
-docker rmi <image-name>    [removing image]
 
 
 docker logs <container-name>
@@ -58,6 +55,13 @@ docker run -it <image> bash       [it will login inside container]
 docker run -v /opt/datadir:/var/lib/mysql mysql          [ volume mapping, here /opt/datadir is outside container directory and /var/lib is inside container ]
 docker run -p 80:5000 <image-name>    [ port mapping, 80 - host port, 5000 - container port ]
 docker run -p 38282:8080 --name blue-app -e APP_COLOR=blue -d kodekloud/simple-webapp
+```
+**Docker Remove**
+```
+docker rm <docker-id>      [removing containers]
+docker rm <docker-id> <docker-id1>
+
+docker rmi <image-name>    [removing image]
 ```
 **Docker Stop**
 ```
