@@ -31,6 +31,10 @@ docker images
 ```
 docker login       [then automatically it will ask username and password]
 ```
+**Docker Logs**
+```
+docker logs <container-name>
+```
 **Docker Push/Pull**
 ```
 docker push <accountname>/<appname>
@@ -44,10 +48,6 @@ docker ps -a
 ```
 ```
 docker inspect <container-name>      [ it will show the details of the container ]
-
-
-
-docker logs <container-name>
 
 ```
 **Docker Run**
