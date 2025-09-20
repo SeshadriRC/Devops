@@ -12,7 +12,7 @@ c. Finally push master branch to this new remote origin.
 
 
 ## Solution
-
+- https://www.nbtechsupport.co.in/2021/05/git-manage-remotes.html
 ```
 cd /usr/src/kodekloudrepos/apps
 git remote add dev_apps /opt/xfusioncorp_apps.git
