@@ -36,10 +36,15 @@ docker login       [then automatically it will ask username and password]
 docker push <accountname>/<appname>
 docker pull <image-name>
 ```
+**Docker ps**
 ```
-docker inspect <container-name>      [ it will show the details of the container ]
 docker ps
 docker ps -a
+
+```
+```
+docker inspect <container-name>      [ it will show the details of the container ]
+
 
 
 docker logs <container-name>
