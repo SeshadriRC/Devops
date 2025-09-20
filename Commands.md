@@ -76,8 +76,9 @@ docker stop <container-name1> <container-name2> <container-name3>
 ```
 **Docker Volume**
 ```
-docker volume create /opt/datadir
+docker volume create /opt/datadir      [ it will get created in /var/lib/docker/volumes ]
 docker run -v /opt/datadir:/var/lib/mysql mysql
+
 ```
 ## Kubernetes
 
