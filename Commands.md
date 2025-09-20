@@ -38,6 +38,7 @@ docker run -p 38080:8080 --name webapp -e DB_Host=mysql-db -e DB_Password=db_pas
 **Docker Login**
 ```
 docker login       [then automatically it will ask username and password]
+docker login private-registry.io
 ```
 **Docker Logs**
 ```
