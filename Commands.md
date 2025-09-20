@@ -31,6 +31,10 @@ docker images
 ```
 docker inspect <container-name>      [ it will show the details of the container ]
 ```
+**Docker Link**
+```
+docker run -p 38080:8080 --name webapp -e DB_Host=mysql-db -e DB_Password=db_pass123 --network=wp-mysql-network --link mysql-db:mysql-db -d kodekloud/simple-webapp-mysql
+```
 **Docker Login**
 ```
 docker login       [then automatically it will ask username and password]
@@ -41,8 +45,14 @@ docker logs <container-name>
 ```
 **Docker Network**
 ```
+docker network inspect bridge
 docker network ls
+docker run --name alpine-2 --network=none alpine
+docker network create --driver bridge --subnet 182.18.0.0/24 --gateway 182.18.0.1 wp-mysql-network
 ```
+
+
+
 **Docker Push/Pull**
 ```
 docker push <accountname>/<appname>
