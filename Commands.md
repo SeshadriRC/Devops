@@ -74,7 +74,11 @@ docker rmi <image-name>    [removing image]
 docker stop <container-name> 
 docker stop <container-name1> <container-name2> <container-name3>
 ```
-
+**Docker Volume**
+```
+docker volume create /opt/datadir
+docker run -v /opt/datadir:/var/lib/mysql mysql
+```
 ## Kubernetes
 
 **Cronjob**
