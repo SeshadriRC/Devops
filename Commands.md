@@ -58,7 +58,7 @@ docker run -d <image> sleep 20000    [ it is in seconds, -d indicates its in bac
 docker run -d --name <container-name> nginx:1.14-alpine    [name the container]
 docker run python:3.6 cat /etc/*release*
 docker run -it <image> bash       [it will login inside container]
-docker run -v /opt/datadir:/var/lib/mysql mysql          [ volume mapping, here /opt/datadir is outside container directory and /var/lib is inside container this is called bind mounting where /opt/datadir is other location not default docker location ]
+docker run -v /opt/datadir:/var/lib/mysql mysql          [ , here /opt/datadir is outside container directory and /var/lib is inside container this is called bind mounting where /opt/datadir is other location not default docker location ]
 docker run -p 80:5000 <image-name>    [ port mapping, 80 - host port, 5000 - container port ]
 docker run -p 38282:8080 --name blue-app -e APP_COLOR=blue -d kodekloud/simple-webapp
 ```
