@@ -111,7 +111,6 @@ kubectl get cronjob
 ```
 kubectl get deploy
 
-kubectl get pods
 
 kubectl set image deployment nginx-deployment nginx-container=nginx:1.19
 - kubectl set image deployment <deployment-name> <container-name>=<new-container-name with tag>
@@ -137,7 +136,7 @@ kubectl config set-context --current --namespace=<your-namespace-name>
 ***get pods***
 
 ```
-kubectl get pods
+kubectl get pods -o wide
 kubectl get pods -l app=orage-app-t4q6      [using label]
 ```
 
