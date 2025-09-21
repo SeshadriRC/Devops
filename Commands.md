@@ -97,6 +97,10 @@ docker volume create datadir-1      [ this is called bind mounting, it will get 
 ```
 ## Kubernetes
 
+**Cluster Info**
+```
+kubectl cluster-info
+```
 **Cronjob**
 
 ```
@@ -140,6 +144,11 @@ kubectl get pods -l app=orage-app-t4q6      [using label]
 ***Edit Pod***
 ```
 kubectl edit pod <pod-name>
+```
+
+**kubectl run**
+```
+kubectl run webapp --image=nginx
 ```
 
 ***Login to container***
