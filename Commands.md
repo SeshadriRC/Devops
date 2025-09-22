@@ -133,6 +133,12 @@ kubectl config set-context --current --namespace=<your-namespace-name>
 ```
 **Pod**
 
+**create**
+```
+kubectl create -f pod.yaml
+kubectl apply -f pod.yaml
+```
+
 **describe**
 ```
 kubectl describe pod <pod-name>
