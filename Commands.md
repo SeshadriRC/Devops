@@ -295,7 +295,10 @@ unzip -l xfusioncorp_blog.zi
 git branch
 git branch -vv
 ```
-
+**Git cherrypick**
+```
+git cherry-pick <commit-hash>
+```
 **Git clone**
 ```
 git clone /opt/blog.git /usr/src/kodekloudrepos/blog
@@ -323,4 +326,5 @@ git push -u dev_apps  master
 ```
 git log --name-only
 git log --graph --decorate
+git log feature --oneline
 ```
