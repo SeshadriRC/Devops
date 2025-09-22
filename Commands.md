@@ -157,6 +157,7 @@ kubectl edit pod <pod-name>
 **kubectl run**
 ```
 kubectl run webapp --image=nginx
+kubectl run redis --image=redis123 --dry-run=client -o yaml > redis-definition.yaml
 
 ```
 
