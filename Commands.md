@@ -138,6 +138,10 @@ kubectl config set-context --current --namespace=<your-namespace-name>
 kubectl describe pod <pod-name>
 ```
 
+**delete**
+```
+kubectl delete pod <pod-name>
+```
 ***get pods***
 
 ```
