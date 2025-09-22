@@ -133,6 +133,11 @@ kubectl config set-context --current --namespace=<your-namespace-name>
 ```
 **Pod**
 
+**describe**
+```
+kubectl describe pod <pod-name>
+```
+
 ***get pods***
 
 ```
@@ -148,6 +153,7 @@ kubectl edit pod <pod-name>
 **kubectl run**
 ```
 kubectl run webapp --image=nginx
+
 ```
 
 ***Login to container***
