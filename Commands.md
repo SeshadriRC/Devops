@@ -136,7 +136,7 @@ kubectl config set-context --current --namespace=<your-namespace-name>
 kubectl get rs
 kubectl delete replicaset <replica-set-name>
 kubectl replace -f <filename>
-kubectl scale--replicas=6 -f <filename>
+kubectl scale replicaset <replicaset-name> --replicas=6 
 ```
 **Pod**
 
