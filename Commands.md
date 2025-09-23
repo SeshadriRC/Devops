@@ -131,6 +131,13 @@ kubectl config view --minify --output 'jsonpath={..namespace}'
 ```
 kubectl config set-context --current --namespace=<your-namespace-name>
 ```
+**ReplicaSet**
+```
+kubectl get rs
+kubectl delete replicaset <replica-set-name>
+kubectl replace -f <filename>
+kubectl scale--replicas=6 -f <filename>
+```
 **Pod**
 
 **create**
