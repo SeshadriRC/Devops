@@ -115,9 +115,10 @@ kubectl get deploy
 kubectl set image deployment nginx-deployment nginx-container=nginx:1.19
 - kubectl set image deployment <deployment-name> <container-name>=<new-container-name with tag>
 
-kubectl rollout undo deployment  nginx-deployment
+kubectl rollout undo deployment/nginx-deployment
 
 kubectl rollout status deployment/nginx-deployment
+kubectl rollout history deployment/<deploy-name>
 
 ```
 
@@ -143,6 +144,7 @@ kubectl scale replicaset <replicaset-name> --replicas=6
 **create**
 ```
 kubectl create -f pod.yaml
+kubectl create -f deploy.yaml --record
 kubectl apply -f pod.yaml
 ```
 
