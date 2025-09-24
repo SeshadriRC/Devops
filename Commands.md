@@ -344,6 +344,12 @@ git merge origin/master
 git remote -v
 git remote add dev_apps /opt/xfusioncorp_apps.git
 git push -u dev_apps  master
+git push origin master --force
+```
+
+**Git reset**
+```
+git reset --hard <commit-hash>            [it will do reset until that commit-hash, so that commit has and below that commits will be present]
 ```
 
 **Git log**
@@ -351,4 +357,6 @@ git push -u dev_apps  master
 git log --name-only
 git log --graph --decorate
 git log feature --oneline
+git log origin/master --oneline
+
 ```
