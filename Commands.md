@@ -111,6 +111,7 @@ kubectl get cronjob
 ```
 kubectl get deploy
 
+kubectl edit deploy <deploy-name> --record
 
 kubectl set image deployment nginx-deployment nginx-container=nginx:1.19
 - kubectl set image deployment <deployment-name> <container-name>=<image with tag>
