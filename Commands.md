@@ -113,7 +113,8 @@ kubectl get deploy
 
 
 kubectl set image deployment nginx-deployment nginx-container=nginx:1.19
-- kubectl set image deployment <deployment-name> <container-name>=<new-container-name with tag>
+- kubectl set image deployment <deployment-name> <container-name>=<image with tag>
+
 
 kubectl rollout undo deployment/nginx-deployment
 
