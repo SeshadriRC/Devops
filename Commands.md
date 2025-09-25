@@ -366,3 +366,8 @@ git log feature --oneline
 git log origin/master --oneline
 
 ```
+**Git stash**
+```
+git stash list
+git stash apply stash@{1}
+```
