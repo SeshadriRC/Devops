@@ -33,7 +33,7 @@ docker inspect <container-name>      [ it will show the details of the container
 ```
 **Docker Link**
 ```
-docker run -p 38080:8080 --name webapp -e DB_Host=mysql-db -e DB_Password=db_pass123 --network=wp-mysql-network --link mysql-db:mysql-db -d kodekloud/simple-webapp-mysql
+docker run -p 38080:8080 --name webapp -e DB_Host=mysql-db -e DB_Password=db_pass123 --network=wp-mysql-network --link mysql-db:mysql-db -d kodekloud/simple-webapp-mysql            [ here first mysql-db -> name of the container, second mysql-db -> hostname ]
 ```
 **Docker Login**
 ```
