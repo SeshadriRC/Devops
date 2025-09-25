@@ -321,7 +321,9 @@ unzip -l xfusioncorp_blog.zi
 **Git branch**
 ```
 git branch
+git branch branch-1
 git branch -vv
+git branch -d branch-1 branch-2
 ```
 **Git cherrypick**
 ```
