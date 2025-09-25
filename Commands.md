@@ -162,6 +162,7 @@ kubectl delete pod <pod-name>
 ***get pods***
 
 ```
+kubectl get pod,svc
 kubectl get pods -o wide
 kubectl get pods -l app=orage-app-t4q6      [using label]
 ```
