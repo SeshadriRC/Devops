@@ -166,6 +166,12 @@ kubectl get pods -o wide
 kubectl get pods -l app=orage-app-t4q6      [using label]
 ```
 
+**svc**
+
+```
+kubectl get svc
+```
+
 ***Edit Pod***
 ```
 kubectl edit pod <pod-name>
