@@ -394,5 +394,11 @@ git stash apply stash@{1}
 **playbook**
 ```
 ansible-playbook <file.yaml>
- ansible-playbook <file.yaml> --check
+ansible-playbook <file.yaml> --check
+
+ansible-playbook configure_database.yml --check --diff
+ansible-playbook --syntax-check configure_database.yml
+ansible-lint database_setup.yml
+
+ansible-playbook -i inventory update-service.yml
 ```
