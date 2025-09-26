@@ -211,6 +211,7 @@ kubectl get pod nginx-phpfpm -o yaml  > /tmp/nginx.yaml
 
 ## Linux
 
+
 **Crontab**
 
 ```
@@ -321,6 +322,12 @@ yum list available selinux\* --> list the available packages
 ```
 zip -r /backup/xfusioncorp_blog.zip /var/www/html/blog
 unzip -l xfusioncorp_blog.zi
+```
+
+**Sudo**
+```
+getent group sudo
+sudo su -
 ```
 
 ## Git
