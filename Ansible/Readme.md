@@ -19,7 +19,3 @@ Password: caleston123
 
 
 Note: Please type exit or logout on the terminal or press CTRL + d to log out from a specific node.
-
-```
-ansible_connection
-```
