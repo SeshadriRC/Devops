@@ -358,6 +358,7 @@ git remote -v
 git remote add dev_apps /opt/xfusioncorp_apps.git
 git push -u dev_apps  master
 git push origin master --force
+
 ```
 
 **Git reset**
@@ -369,6 +370,7 @@ git reset --hard <commit-hash>            [it will do reset until that commit-ha
 ```
 git log --name-only
 git log --graph --decorate
+git log --oneline --graph --all
 git log feature --oneline
 git log origin/master --oneline
 
