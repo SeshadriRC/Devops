@@ -394,4 +394,5 @@ git stash apply stash@{1}
 **playbook**
 ```
 ansible-playbook <file.yaml>
+ ansible-playbook <file.yaml> --check
 ```
