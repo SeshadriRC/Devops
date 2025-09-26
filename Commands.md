@@ -4,6 +4,7 @@
 - [Kubernetes](#kubernetes)
 - [Linux](#linux)
 - [Git](#git)
+- [Ansible](#ansible)
 
 ## Docker
 
@@ -386,4 +387,11 @@ git log origin/master --oneline
 ```
 git stash list
 git stash apply stash@{1}
+```
+
+## Ansible
+
+**playbook**
+```
+ansible-playbook <file.yaml>
 ```
