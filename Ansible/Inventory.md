@@ -56,6 +56,7 @@ db1
 
 **group of groups**
 ```
+# Sample Inventory File 5
 [bob@student-node playbooks]$ cat inventory 
 # Sample Inventory File
 
