@@ -372,6 +372,7 @@ git push origin master --force
 **Git reset**
 ```
 git reset --hard <commit-hash>            [it will do reset until that commit-hash, so that commit has and below that commits will be present]
+git reset <filename.txt>
 ```
 
 **Git log**
