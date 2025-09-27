@@ -383,6 +383,12 @@ git log --oneline --graph --all
 git log feature --oneline
 git log origin/master --oneline
 
+git log origin/master..HEAD --oneline    [it will show commit hash with comments which are not pushed to remote ]
+git diff --name-only origin/master..HEAD [it will show the files which get changed]
+git show <commit_id>  [show commit details]
+
+
+
 ```
 **Git stash**
 ```
