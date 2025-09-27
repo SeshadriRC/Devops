@@ -390,6 +390,12 @@ git show <commit_id>  [show commit details]
 
 
 ```
+**Git rebase**
+```
+git rebase --continue
+git pull --rebase origin master
+
+```
 **Git stash**
 ```
 git stash list
