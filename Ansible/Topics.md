@@ -2,17 +2,19 @@
 - Playbooks
 - Modules
    ansible_doc
-   modules learned: service, lineinfile, command, user, firewalld, yum
+   modules learned: service, lineinfile, command, user, firewalld, yum, package,service,shell
    Dynamic Inventory Plugin
    Module plugin
   ansible-inventory --list -i aws_inventory.py
    cisco.ios
   ec2_instance
 - Variables
-- Conditionals
+     registe,
+- Conditionals (using when)
+- loops  (using with_items)
+- Ansible Roles
 
 ```
-
 In this lab exercise you will use below hosts. Please note down some details about these hosts as given below :
 
 
