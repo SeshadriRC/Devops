@@ -9,6 +9,10 @@
    cisco.ios
   ec2_instance
 - Variables
+- Conditionals
+
+```
+
 In this lab exercise you will use below hosts. Please note down some details about these hosts as given below :
 
 
@@ -30,5 +34,6 @@ Password: caleston123
 
 
 Note: Please type exit or logout on the terminal or press CTRL + d to log out from a specific node.
+
 
 ```
