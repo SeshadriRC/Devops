@@ -401,6 +401,12 @@ git pull --rebase origin master
 git stash list
 git stash apply stash@{1}
 ```
+**Git tag**
+```
+[use below commands only after pushing, don't use before]
+git fetch --tags
+git tag -l
+```
 
 ## Ansible
 
