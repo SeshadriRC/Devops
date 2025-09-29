@@ -5,7 +5,8 @@
 - [Linux](#linux)
 - [Git](#git)
 - [Ansible](#ansible)
-
+- [Terraform](#terraform)
+  
 ## Docker
 
 **Docker Attach**
@@ -421,3 +422,13 @@ ansible-lint database_setup.yml
 
 ansible-playbook -i inventory update-service.yml
 ```
+
+## Terraform
+
+**Basic**
+```
+terraform init
+terraform plan
+terraform apply
+```
+
