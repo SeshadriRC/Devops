@@ -1,0 +1,4 @@
+- HCL
+- Providers,Resource , resource type, resource name
+- terraform init, plan , apply
+- terraform destroy
