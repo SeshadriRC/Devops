@@ -456,6 +456,10 @@ terraform apply
 ```
 terraform apply -var-file variables.tfvars
 ```
+**terraform destroy**
+```
+terraform destroy
+```
 **terraform show**
 ```
 terraform show                            [is used to display Terraform state or plan outputs in a human-readable form]
