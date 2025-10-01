@@ -435,4 +435,8 @@ terraform init
 terraform plan
 terraform apply
 ```
+**terraform apply**
+```
+terraform apply -var-file variables.tfvars
+```
 
