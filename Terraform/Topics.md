@@ -2,3 +2,12 @@
 - Providers,Resource , resource type, resource name
 - terraform init, plan , apply
 - terraform destroy
+- variables and its types
+    - set cannot have duplicate elements.
+    - env variable  [ export TF_VAR_<variable_name>=<value>
+    - Terraform variable precedence order (highest to lowest)
+- Resource attribute
+    - resource_type.resource_name.attribute
+- Resource Dependencies
+     - implicit and explicit dependency
+     -keywords: depends_on
