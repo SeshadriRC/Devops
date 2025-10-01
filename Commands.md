@@ -17,9 +17,13 @@ docker attach <container-id>
 ```
 docker build . -t <accountname>/<appname>
 ```
+**Docker cp**
+```
+docker cp /tmp/nautilus.txt.gpg ubuntu_latest:/opt/
+```
 **Docker exec**
 ```
-docker exec <container-id> cat /etc/*release*    [run the command inside running container]
+docker exec -it <container-id> cat /etc/*release*    [run the command inside running container]
 ```
 **Docker Host**
 ```
