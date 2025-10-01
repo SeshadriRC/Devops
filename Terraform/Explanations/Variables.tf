@@ -1,4 +1,3 @@
-```
 variable "name" {
      type = string
      default = "Mark"
@@ -40,4 +39,3 @@ variable "users" {
 
   
 }
-```
