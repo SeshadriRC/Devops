@@ -217,6 +217,23 @@ kubectl get pod nginx-phpfpm -o yaml  > /tmp/nginx.yaml
 
 ## Linux
 
+**Copy and Paste**
+
+```
+In vi/vim, you can do this quickly:
+
+Move to the first line (resource "time_static" "time_update" {)
+
+Press V (capital V) → starts linewise visual mode
+
+Move down with j until the last line (} example) is highlighted
+
+Press d → this cuts (deletes) the selected lines into a buffer
+
+Move the cursor to the line below where you want to paste
+
+Press p → this pastes the cut block below the cursor
+```
 
 **Crontab**
 
