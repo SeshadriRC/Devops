@@ -96,6 +96,10 @@ docker rmi <image-name>    [removing image]
 docker stop <container-name> 
 docker stop <container-name1> <container-name2> <container-name3>
 ```
+**Docker Tag**
+```
+docker tag busybox:musl busybox:local
+```
 **Docker Volume**
 ```
 docker volume create datadir-1      [ this is called bind mounting, it will get created in default location -  /var/lib/docker/volumes ]
