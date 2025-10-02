@@ -12,3 +12,4 @@
 - Resource Dependencies
      - implicit and explicit dependency
      -keywords: depends_on
+- Statefile [ terraform.tfstate ]
