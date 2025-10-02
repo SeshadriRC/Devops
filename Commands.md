@@ -464,7 +464,33 @@ terraform apply -var-file variables.tfvars
 ```
 terraform destroy
 ```
+**terraform format**
+```
+terraform fmt
+```
+**terraform graph**
+```
+terraform graph
+```
+**terraform mirror**
+```
+terraform mirror
+```
 **terraform show**
 ```
 terraform show                            [is used to display Terraform state or plan outputs in a human-readable form]
+```
+**terraform output**
+```
+terraform output
+terraform output <variable-name>
+```
+**terraform providers**
+```
+terraform providers mirror /root/terraform-projects/
+```
+**terraform validate**
+```
+terraform validate
+
 ```
