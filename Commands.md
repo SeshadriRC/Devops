@@ -482,11 +482,11 @@ terraform mirror
 ```
 **terraform show**
 ```
-terraform show                            [is used to display Terraform state or plan outputs in a human-readable form]
+terraform show                            [is used to display Terraform state or plan outputs in a human-readable form, all details of resource]
 ```
 **terraform output**
 ```
-terraform output
+terraform output                          [Only user-defined outputs (what you explicitly choose to expose]
 terraform output <variable-name>
 ```
 **terraform providers**
