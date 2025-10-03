@@ -17,6 +17,10 @@ docker attach <container-id>
 ```
 docker build . -t <accountname>/<appname>
 ```
+**Docker Commit**
+```
+docker commit ubuntu_latest official:nautilus
+```
 **Docker cp**
 ```
 docker cp /tmp/nautilus.txt.gpg ubuntu_latest:/opt/
