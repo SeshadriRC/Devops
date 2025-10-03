@@ -1,4 +1,5 @@
 - docker ce and docker compose installation
 - run the container
 - copy the file to container
-- tagging
+- docker commit
+- docker tagging
