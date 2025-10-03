@@ -19,3 +19,6 @@
     - prevent_destroy
     - ignore_changes
 - Data Sources
+- Meta Arguments
+    - count
+    - for-each
