@@ -225,6 +225,18 @@ kubectl get pod nginx-phpfpm -o yaml  > /tmp/nginx.yaml
 
 ## Linux
 
+**Apt**
+```
+apt-get update
+dpkg -l | grep apache2
+apache2 -v
+
+apt-cache search apache2
+apt-cache policy apache2
+apt-get install -y apache2
+
+```
+
 **Copy and Paste**
 
 ```
@@ -270,6 +282,9 @@ ls -ld   (for directory)
 - [Add-ip](https://github.com/SeshadriRC/Devops/blob/main/Explanations/Adding%20a%20static%20route.md)
 
 ```
+apt-get install -y net-tools
+netstat -tulnp
+
 telnet stapp01.stratos.xfusioncorp.com 5000
 netstat -tulnp
 (or)
@@ -330,6 +345,8 @@ scp /backup/xfusioncorp_blog.zip clint@stbkp01.stratos.xfusioncorp.com:/backup
 
 ```
 systemctl status crond.service
+service apache2 status
+service apache2 start
 
 ```
 
