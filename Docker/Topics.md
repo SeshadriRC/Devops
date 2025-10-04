@@ -3,3 +3,4 @@
 - copy the file to container
 - docker commit
 - docker tagging
+- docker exec
