@@ -4,3 +4,4 @@
 - docker commit
 - docker tagging
 - docker exec
+- write docker file and build it
