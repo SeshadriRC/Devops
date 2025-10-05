@@ -60,3 +60,26 @@ Response to User
 If you want, I can also **make a simpler, one-line analogy diagram** that’s very easy to explain verbally in an interview.
 
 Do you want me to do that?
+
+Here’s a **simplified one-line analogy diagram** for interview-friendly explanation:
+
+```
+User Input → [MCP: Remembers context] + [RAG: Fetches external info] → Language Model → Response
+```
+
+---
+
+### **How to explain verbally in an interview**
+
+* **MCP** = “Memory” → remembers what has already happened in the conversation.
+* **RAG** = “Lookup” → finds external information to make answers accurate.
+* **Language Model** = combines both → generates a response that is **coherent** and **factually correct**.
+
+**Analogy:**
+
+> “MCP is like a notebook tracking the conversation; RAG is like a library lookup; the model writes the answer using both.”
+
+---
+
+This version is short, clear, and perfect for explaining in under a minute.
+
