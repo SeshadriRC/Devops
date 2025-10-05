@@ -326,6 +326,13 @@ nginx -t
 
 ```
 
+**Grep**
+
+```
+docker inspect fe0 | grep -A 3 Port
+
+```
+
 **SSH**
 
 ```
