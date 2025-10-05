@@ -326,6 +326,14 @@ nginx -t
 
 ```
 
+**Port**
+
+```
+Use port above 1024, because below 1024 it requires root privs
+
+lsof -i :5002     [check the free ports on the hosts] 
+```
+
 **Grep**
 
 ```
