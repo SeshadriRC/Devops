@@ -12,3 +12,4 @@
     - nested if else
 10. Loops
     - while
+    - for
