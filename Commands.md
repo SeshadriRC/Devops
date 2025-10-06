@@ -56,7 +56,7 @@ docker logs <container-name>
 ```
 **Docker Network**
 ```
-docker network inspect bridge
+docker network inspect <network-name>
 docker network ls
 docker run --name alpine-2 --network=none alpine
 docker network create --driver bridge --subnet 182.18.0.0/24 --gateway 182.18.0.1 wp-mysql-network
