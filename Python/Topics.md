@@ -10,3 +10,5 @@
 9. Conditional Statements
     - if else
     - nested if else
+10. Loops
+    - while
