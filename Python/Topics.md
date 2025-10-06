@@ -7,3 +7,6 @@
     - Typecasting
 7. String
 8. Comparison Operators
+9. Conditional Statements
+    - if else
+    - nested if else
