@@ -13,3 +13,6 @@
 10. Loops
     - while
     - for
+11. Operators
+    - Logical
+    - Bitwise
