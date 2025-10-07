@@ -1,0 +1,6 @@
+- git pull
+- git merge
+- git fetch
+- git stash
+- git rebase
+- git push origin master
