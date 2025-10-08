@@ -16,3 +16,7 @@
 11. Operators
     - Logical
     - Bitwise
+12. Lists
+    - Methods ( pop , sort(), ages,min(variable),max(variable), variable.insert, variable.insert(index, element), variable.append(60)
+    - Iterating List
+    - Understanding List - enumerate(list1)
