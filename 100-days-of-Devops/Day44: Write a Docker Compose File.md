@@ -35,3 +35,4 @@ install docker-compose
 curl http://localhost:8086/index1.html
 https://docs.docker.com/compose/install/standalone/
   
+curl http://localhost:5000/index1.html
