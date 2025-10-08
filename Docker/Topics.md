@@ -6,6 +6,7 @@
 - docker exec
 - write docker file and build it
 - Docker Network
+- Docker compose
 
  
 
