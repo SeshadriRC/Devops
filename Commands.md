@@ -17,6 +17,10 @@ docker attach <container-id>
 ```
 docker build . -t <accountname>/<appname>
 ```
+**Docker compose**
+```
+docker compose -d up                         [make sure docker-compose.yml is present]
+```
 **Docker Commit**
 ```
 docker commit ubuntu_latest official:nautilus
@@ -235,6 +239,8 @@ apt-cache search apache2
 apt-cache policy apache2
 apt-get install -y apache2
 
+
+
 ```
 
 **Copy and Paste**
@@ -269,6 +275,7 @@ crontab -l
 
 ```
  curl -ivk http://stapp02:5001
+curl http://localhost:5000/index1.html
 ```
 
 **List**
@@ -284,6 +291,9 @@ ls -ld   (for directory)
 ```
 apt-get install -y net-tools
 netstat -tulnp
+
+apt-get install -y procps      [ps process]
+apt-get install -y curl        [curl process]
 
 telnet stapp01.stratos.xfusioncorp.com 5000
 netstat -tulnp
