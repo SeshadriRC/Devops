@@ -16,6 +16,7 @@ docker attach <container-id>
 **Docker Build**
 ```
 docker build . -t <accountname>/<appname>
+docker build . -t <image-name>        [by default it will get uploaded to library repository]
 ```
 **Docker compose**
 ```
