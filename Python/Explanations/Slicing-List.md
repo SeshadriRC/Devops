@@ -191,3 +191,124 @@ print(my_list[::-1])
 [4, 3, 2, 1, 0]
 ```
 
+## Question 5
+
+What will be the output of below Python code?
+
+list1 = [1, 66, "python", [11, 55, "cat"], [ ], 2.22, True]
+print(list1[2:4])
+
+
+Let’s analyze step by step 👇
+
+```python
+list1 = [1, 66, "python", [11, 55, "cat"], [], 2.22, True]
+print(list1[2:4])
+```
+
+---
+
+### 🧩 Explanation:
+
+* `list1[2:4]` is a **slice**:
+
+  * Start at **index 2**
+  * Go **up to but not including index 4**
+
+---
+
+### Step 1 — List indices
+
+```
+Index 0 → 1
+Index 1 → 66
+Index 2 → "python"
+Index 3 → [11, 55, "cat"]
+Index 4 → []
+Index 5 → 2.22
+Index 6 → True
+```
+
+---
+
+### Step 2 — Take slice `[2:4]`
+
+* Index 2 → `"python"`
+* Index 3 → `[11, 55, "cat"]`
+
+So the slice is:
+
+```python
+["python", [11, 55, "cat"]]
+```
+
+---
+
+### ✅ Output:
+
+```python
+['python', [11, 55, 'cat']]
+```
+
+## Question 6
+
+What will be the output of below Python code?
+
+my_list = [0, 1, 2, 3, 4]
+my_list.append("python")
+print(my_list[2:])
+
+Let’s analyze step by step 👇
+
+```python
+my_list = [0, 1, 2, 3, 4]
+my_list.append("python")
+print(my_list[2:])
+```
+
+---
+
+### Step 1 — Initial list
+
+```python
+my_list = [0, 1, 2, 3, 4]
+```
+
+---
+
+### Step 2 — Append `"python"`
+
+```python
+my_list.append("python")
+```
+
+Now:
+
+```python
+my_list = [0, 1, 2, 3, 4, "python"]
+```
+
+---
+
+### Step 3 — Slice `[2:]`
+
+* `[2:]` means **start at index 2 till the end of the list**
+* Index 2 → `2`
+* Index 3 → `3`
+* Index 4 → `4`
+* Index 5 → `"python"`
+
+So:
+
+```python
+[2, 3, 4, "python"]
+```
+
+---
+
+### ✅ Output:
+
+```python
+[2, 3, 4, 'python']
+```
+
