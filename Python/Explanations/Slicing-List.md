@@ -34,13 +34,12 @@ So it will include elements at indices:
 
 ```python
 
----
-What will be the output of below Python code?
-
-my_list = [0, 1, 2, 3, 4]
-print(my_list[-1])
+[1, 66, 'python', [11, 55, 'cat']]
+```
 
 Let’s break it down 👇
+
+## Question 2
 
 ```python
 my_list = [0, 1, 2, 3, 4]
@@ -77,7 +76,3 @@ Value:  0   1   2   3   4
 4
 ```
 
-
----
-[1, 66, 'python', [11, 55, 'cat']]
-```
