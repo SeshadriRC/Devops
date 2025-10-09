@@ -20,3 +20,6 @@
     - Methods ( pop , sort(), ages,min(variable),max(variable), variable.insert, variable.insert(index, element), variable.append(60)
     - Iterating List
     - Understanding List - enumerate(list1)
+    - Slicing list
+       (my_list[::2]) ,
+    - Finding in the list
