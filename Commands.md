@@ -58,6 +58,8 @@ docker login private-registry.io
 **Docker Logs**
 ```
 docker logs <container-name>
+docker logs <container-id> | grep "error"
+docker logs --since 1h <container-id>
 ```
 **Docker Network**
 ```
