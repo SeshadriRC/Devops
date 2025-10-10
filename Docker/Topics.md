@@ -7,6 +7,7 @@
 - write docker file and build it
 - Docker Network
 - Docker compose
+    - build applications using mysql and webserver
 
  
 
