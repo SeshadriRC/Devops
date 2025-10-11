@@ -33,6 +33,8 @@ docker cp /tmp/nautilus.txt.gpg ubuntu_latest:/opt/
 **Docker exec**
 ```
 docker exec -it <container-id> cat /etc/*release*    [run the command inside running container]
+docker exec -it <container-id> /bin/sh
+docker exec -it <container-id> /bin/bash
 ```
 **Docker Host**
 ```
