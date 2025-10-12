@@ -78,6 +78,9 @@ docker network create --driver bridge --subnet 182.18.0.0/24 --gateway 182.18.0.
 ```
 docker push <accountname>/<appname>
 docker pull <image-name>
+
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
 ```
 **Docker ps**
 ```
