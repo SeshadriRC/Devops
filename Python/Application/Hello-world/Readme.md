@@ -6,4 +6,4 @@
 - Clone the git
 - Install the flask using requirements.txt
 - run app using `python3 app.py` 
-- Access using [http://localhost:8000/]
+- Access using (http://localhost:8000/)
