@@ -238,6 +238,7 @@ kubectl get pod nginx-phpfpm -o yaml  > /tmp/nginx.yaml
 **Apt**
 ```
 apt-get update
+apt-get upgrade -y    [upgrading existing packages]
 dpkg -l | grep apache2
 apache2 -v
 
