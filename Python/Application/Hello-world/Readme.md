@@ -1,0 +1,3 @@
+- Clone the git
+- Install the flask using requirements.txt
+- run app using `python3 app.py` 
