@@ -24,3 +24,5 @@
        (my_list[::2]) ,
     - Finding in the list
 13. Nested Lists - 2D
+14. Functions
+    - Arguments
