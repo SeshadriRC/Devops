@@ -136,6 +136,12 @@ kubectl get cronjob
 
 **Deployment**
 ```
+kubectl create deployment nginx --image=nginx:latest
+kubectl describe deployment nginx
+kubectl get deployments
+kubectl get pods
+
+
 kubectl get deploy
 
 kubectl edit deploy <deploy-name> --record
