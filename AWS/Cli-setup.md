@@ -16,3 +16,10 @@ Default region name [None]: ap-south-1
 Default output format [None]: json
 
 ```
+
+```
+user list
+
+cli-user
+practice-S3-read - 4#
+```
