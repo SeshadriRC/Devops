@@ -27,5 +27,5 @@
 14. Functions
      - Arguments
      - Return-statement
-    
-    - Arguments
+     - Arguments
+     - List as Arguments
