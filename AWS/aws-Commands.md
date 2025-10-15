@@ -25,7 +25,21 @@ aws iam update-user \
     --new-user-name cli_user
 ```
 
+**List attached policies**
+```
+aws iam list-attached-user-policies --user-name sesha-read
+```
+**Remove Policy from a user**
+```
+aws iam detach-user-policy \
+    --user-name sesha-read \
+    --policy-arn arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
 
+aws iam detach-user-policy \
+    --user-name sesha-read \
+    --policy-arn arn:aws:iam::466567470934:policy/AmazonS3ReadOnlyAccess
+
+```
 **VPC**  
 ***Describe***
 ```
