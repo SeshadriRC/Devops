@@ -126,5 +126,47 @@ print(double_list(numbers))
 [1, 2, 3, 1, 2, 3]
 ```
 
+## Question 3
 
+What is the output of the following snippet:
 
+def get_odd_func(numbers):
+    odd_numbers = [num for num in numbers if num % 2]
+    return odd_numbers
+
+print(get_odd_func([7, 4, 5, 6, 9, 8, 12]))
+
+Let's go step by step 👇
+
+### Code:
+
+```python
+def get_odd_func(numbers):
+    odd_numbers = [num for num in numbers if num % 2]
+    return odd_numbers
+
+print(get_odd_func([7, 4, 5, 6, 9, 8, 12]))
+```
+
+### Explanation:
+
+* The list comprehension `[num for num in numbers if num % 2]`
+  keeps only **odd numbers**, since `num % 2` is **True** (non-zero) for odds and **False** (zero) for evens.
+
+### Step-by-step filtering:
+
+| num | num % 2 | Include? |
+| --- | ------- | -------- |
+| 7   | 1       | ✅        |
+| 4   | 0       | ❌        |
+| 5   | 1       | ✅        |
+| 6   | 0       | ❌        |
+| 9   | 1       | ✅        |
+| 8   | 0       | ❌        |
+| 12  | 0       | ❌        |
+
+### ✅ Output:
+
+```
+[7, 5, 9]
+```
