@@ -1,0 +1,2 @@
+- User creation
+  - rename an IAM user in cli
