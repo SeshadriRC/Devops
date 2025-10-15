@@ -17,9 +17,4 @@ Default output format [None]: json
 
 ```
 
-```
-user list
 
-cli-user
-practice-S3-read - 4#
-```
