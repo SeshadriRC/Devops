@@ -1,3 +1,7 @@
+
+<img width="1057" height="536" alt="image" src="https://github.com/user-attachments/assets/210c92f8-32d7-41ab-968d-3a01cf17a87d" />
+
+
 Here’s how you can explain **Ingress** and **Egress** clearly — both in **layman terms** and in an **interview perspective** 👇
 
 ---
