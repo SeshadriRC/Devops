@@ -1,0 +1,6 @@
+- Deploy Pods in Kubernetes Cluster
+- Deploy app in kubernetes
+- Set Resource Limits in Kubernetes Pods
+- Execute Rolling Updates in Kubernetes
+- Revert Deployment to Previous Version in Kubernetes
+- Resolve VolumeMounts Issue in Kubernetes      -[not confident]
