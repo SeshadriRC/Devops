@@ -155,6 +155,10 @@ kubectl rollout undo deployment/nginx-deployment
 kubectl rollout status deployment/nginx-deployment
 kubectl rollout history deployment/<deploy-name>
 
+
+k logs -f nginx-phpfpm
+kubectl logs -p <pod-name>
+
 ```
 
 **Namespace**
@@ -172,6 +176,7 @@ kubectl config set-context --current --namespace=<your-namespace-name>
 kubectl get rs
 kubectl delete replicaset <replica-set-name>
 kubectl replace -f <filename>
+kubectl replace --force -f pod.yaml
 kubectl scale replicaset <replicaset-name> --replicas=6 
 ```
 **Pod**
@@ -199,6 +204,8 @@ kubectl delete pod <pod-name>
 kubectl get pod,svc
 kubectl get pods -o wide
 kubectl get pods -l app=orage-app-t4q6      [using label]
+
+kubectl get pod nginx-phpfpm -o yaml > pod.yaml
 ```
 
 **svc**
