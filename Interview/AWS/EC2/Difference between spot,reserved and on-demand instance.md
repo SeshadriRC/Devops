@@ -31,3 +31,50 @@ Perfect! Here’s a clear **comparison of On-Demand, Reserved, and Spot Instance
 If you want, I can also **explain why Auto Scaling Groups often use a mix of Spot + On-Demand** for reliability — it ties this topic with your previous ASG question.
 
 Do you want me to do that?
+
+
+Perfect! Let’s connect **Spot Instances** with **Auto Scaling Groups (ASGs)** and why a **mixed strategy** is recommended.
+
+---
+
+## **1. Problem with 100% Spot ASG**
+
+* Spot instances can be **terminated anytime** by AWS if capacity is needed.
+* If your ASG uses only Spot instances, **new nodes may not launch** during scaling events if spot capacity is unavailable or spot price rises.
+* This can cause **downtime** for your application, especially if it’s stateful or critical.
+
+---
+
+## **2. Mixed Instances Strategy**
+
+A **Mixed Instances ASG** combines **Spot + On-Demand instances** in a single ASG.
+
+### **How it works:**
+
+1. **Define desired ratio** (e.g., 70% Spot, 30% On-Demand).
+2. **Scaling events** first attempt to launch **Spot instances** to save cost.
+3. If Spot is unavailable or interrupted, **On-Demand instances** are launched to maintain capacity.
+4. ASG automatically **replaces interrupted Spot instances** based on your policy.
+
+---
+
+### **3. Advantages**
+
+| Advantage             | Explanation                                                              |
+| --------------------- | ------------------------------------------------------------------------ |
+| **Cost Optimization** | Majority of nodes are Spot → cheaper.                                    |
+| **High Availability** | On-Demand nodes ensure minimum capacity is always met.                   |
+| **Fault Tolerance**   | Spot interruptions don’t break your application.                         |
+| **Flexibility**       | Supports multiple instance types and AZs for better capacity allocation. |
+
+---
+
+### **4. Interview Perspective Answer**
+
+> “Using 100% Spot instances in an Auto Scaling Group can be risky because Spot instances may be terminated by AWS or unavailable during scaling, which can lead to downtime. To address this, we can use a **mixed instances policy**, combining Spot and On-Demand instances. Spot instances provide cost savings, while On-Demand instances ensure the application maintains required capacity and high availability. This strategy balances **cost, availability, and fault tolerance**.”
+
+---
+
+If you want, I can also **draw a simple diagram showing ASG with Spot + On-Demand nodes** — it’s a visual that impresses in interviews.
+
+Do you want me to do that?
