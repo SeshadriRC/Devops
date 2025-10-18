@@ -4,3 +4,4 @@
 - Execute Rolling Updates in Kubernetes
 - Revert Deployment to Previous Version in Kubernetes
 - Resolve VolumeMounts Issue in Kubernetes      -[not confident]
+- Shared Volume
