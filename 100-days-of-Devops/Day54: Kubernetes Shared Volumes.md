@@ -24,3 +24,30 @@ Note: The kubectl utility on jump_host has been configured to work with the kube
 
 
 ## Solution
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: volume-share-xfusion
+spec:
+  containers:
+    - name: volume-container-xfusion-1
+      image: fedora:latest
+      command: ["sleep", "3600"]
+      volumeMounts:
+        - name: volume-share
+          mountPath: /tmp/ecommerce
+
+    - name: volume-container-xfusion-2
+      image: fedora:latest
+      command: ["sleep", "3600"]
+      volumeMounts:
+        - name: volume-share
+          mountPath: /tmp/apps
+
+  volumes:
+    - name: volume-share
+      emptyDir: {}
+
+```
