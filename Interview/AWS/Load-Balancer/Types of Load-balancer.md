@@ -1,5 +1,9 @@
 What are the load balancers in AWS. Briefly explain which one you have used and uses cases of others. give me in layman terms and in interview perspective
 
+
+<img width="1913" height="802" alt="image" src="https://github.com/user-attachments/assets/77e207f7-a104-431e-bdf4-44314803b4cb" />
+
+
 Here’s a clear **interview-style answer in layman terms** for AWS load balancers 👇
 
 ---
