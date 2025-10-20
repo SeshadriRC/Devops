@@ -2,6 +2,12 @@ Perfect — here’s how you can explain this in **both simple (layman)** and **
 
 ---
 
+<img width="1919" height="1001" alt="image" src="https://github.com/user-attachments/assets/d69947c4-aeb3-4c4b-818b-8c964d2e41f8" />
+
+<img width="1906" height="835" alt="image" src="https://github.com/user-attachments/assets/cf788404-2064-4c56-9e70-bb34c8a0c9ea" />
+
+
+
 ## 🧩 **Layman Explanation (Easy-to-understand)**
 
 > “In our team, we use **Datadog** to continuously monitor our applications, databases, and servers. If something goes wrong — like high CPU, low disk space, or an application going down — Datadog automatically detects it based on predefined thresholds or alerts.
