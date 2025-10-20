@@ -204,6 +204,8 @@ kubectl delete pod <pod-name>
 kubectl get pod,svc
 kubectl get pods -o wide
 kubectl get pods -l app=orage-app-t4q6      [using label]
+k get pods --show-labels
+k get pod <pod-name> --show-labels
 
 kubectl get pod nginx-phpfpm -o yaml > pod.yaml
 ```
