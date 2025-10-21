@@ -158,6 +158,7 @@ kubectl rollout history deployment/<deploy-name>
 
 k logs -f nginx-phpfpm
 kubectl logs -p <pod-name>
+kubectl logs -f <pod-name>
 
 ```
 
