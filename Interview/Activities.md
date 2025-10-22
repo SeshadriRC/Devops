@@ -9,3 +9,4 @@
 
 ## Kubernetes
 - OCP cluster upgrade
+- Deploy application on kubernetes, PVC configuration, pod log troubleshooting
