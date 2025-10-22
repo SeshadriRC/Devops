@@ -45,3 +45,35 @@ spec:
       nodeport: 3011
   
 ```
+
+
+Good question 👍
+
+In your YAML:
+
+```yaml
+ports:
+  - port: 82
+    targetPort: 80 
+    nodePort: 3011
+```
+
+Here’s what each field means:
+
+| Field              | Description                                                                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **port: 82**       | The **port number exposed by the Service** *inside the cluster*. Other pods in the same cluster can access this Service using port `82`. |
+| **targetPort: 80** | The **port on the container (Pod)** where the actual application (like Nginx) is listening.                                              |
+| **nodePort: 3011** | The **port on each node’s IP** through which you can access the Service *from outside the cluster*.                                      |
+
+### Example flow
+
+If your pod runs Nginx on port `80`,
+
+* Inside the cluster, other pods can call:
+  `http://nginx-service:82`
+* Outside the cluster (if NodePort is used), you can call:
+  `http://<NodeIP>:3011`
+
+So, **`port: 82` is the Service’s internal port**, not the container’s port.
+
