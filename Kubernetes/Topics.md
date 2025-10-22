@@ -6,3 +6,4 @@
 - Resolve VolumeMounts Issue in Kubernetes      -[not confident]
 - Shared Volume
 - Sidecar Containers
+- Deploying application on kubernetes
