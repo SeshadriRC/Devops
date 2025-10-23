@@ -317,6 +317,7 @@ ls -ld   (for directory)
 **Network topic**
 - curl
 - telnet
+- packet drop
 - [Add-ip](https://github.com/SeshadriRC/Devops/blob/main/Explanations/Adding%20a%20static%20route.md)
 
 ```
@@ -355,6 +356,11 @@ Add ip to route table
 sudo ip route add 172.16.238.0/24 via 172.16.239.1
 [https://github.com/SeshadriRC/Devops/blob/main/Explanations/Adding%20a%20static%20route.md]
 
+```
+***packet drop***
+```
+ping -c 10 10.0.1.25    - If you see % packet loss, packets are dropping.
+traceroute 10.0.1.25    - Helps identify where in the network the packets are being dropped.
 ```
 
 **Nginx**
