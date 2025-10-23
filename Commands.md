@@ -302,7 +302,8 @@ crontab -l
 **Curl**
 
 ```
- curl -ivk http://stapp02:5001
+curl -i http://google:5000
+curl -ivk http://stapp02:5001
 curl http://localhost:5000/index1.html
 ```
 
@@ -313,7 +314,9 @@ ls
 ls -ld   (for directory)
 ```
 
-**Network**
+**Network topic**
+- curl
+- telnet
 - [Add-ip](https://github.com/SeshadriRC/Devops/blob/main/Explanations/Adding%20a%20static%20route.md)
 
 ```
