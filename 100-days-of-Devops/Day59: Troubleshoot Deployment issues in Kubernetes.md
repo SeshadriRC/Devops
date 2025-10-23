@@ -9,3 +9,9 @@ Note: The kubectl utility on jump_host has been configured to work with the kube
 
 ## Solution
 
+```
+k describe pod redis-deployment-5bcd4c7d64-g8gz4 -> config map not found error
+k get deployments.apps redis-deployment -o yaml >> redis-dep.yaml
+k replace -f redis-dep.yaml
+kubectl create -f pod.yaml --dry-run=client
+```
