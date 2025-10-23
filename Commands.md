@@ -188,6 +188,7 @@ kubectl create -f pod.yaml
 kubectl create -f deploy.yaml --record
 kubectl apply -f pod.yaml
 kubectl apply –dry-run=client -f <file>.yaml
+kubectl create -f pod.yaml --dry-run=client
 ```
 
 **describe**
