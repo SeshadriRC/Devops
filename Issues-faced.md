@@ -5,6 +5,8 @@
 
 [Database issue](#Database-issue)
 
+[RRT](#RRT)
+
 ## Openshift issue
 
 **Connection timeouts**
@@ -20,11 +22,12 @@ We will ask the app team to use correct image
 
 **Probe Failures**
 
-we will ask the application team to configure probes properly
+- we will ask the application team to configure probes properly
+- liveness and readiness -> set initial delay seconds to 10
 
 **Pod crashloopback off**
 
-We observed a CrashLoopBackOff in the pod due to an OOMKilled event. We informed the application team and instructed them to allocate sufficient memory.
+- We observed a CrashLoopBackOff in the pod due to an OOMKilled event. We informed the application team and instructed them to allocate sufficient memory.
 
 **Quota issue**
 
@@ -52,7 +55,9 @@ The application team was unable to deploy the application as it required a large
 6. Credential Refresh failure
 7. Kubernetes or Node maintanence
 
-- We noticed a CPU utilization by the Pod which created by cronjob, so to address this issue we have suspended the cronjob post taht issue got fixed
+- We noticed a CPU utilization by the Pod which created by cronjob, so to address this issue we have suspended the cronjob post that issue got fixed
+- One pod alone throwing timeout 500 error, please refer RRT 1
+- Socket timeout exception in pod log, so we asked user to increase the memory limits in deployment and save the deployment. post that this issue got fixed, but in pod events    we don't see any error
 
 ## Database issue
 
@@ -66,7 +71,7 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Concepts.Gener
 
 **Not able to take DB snapshot**
 
-We were unable to take a snapshot of the database as the snapshot limit (100) had already been reached. There were 100 snapshots across various databases. To resolve this, we raised a case with the AWS vendor, and they subsequently increased the snapshot limit from 100 to 200.
+We were unable to take a snapshot of the database as the snapshot limit (100) had already been reached. There were 100 snapshots across various databases. To resolve this, we increased the quota in Service
 
 **Storage issue**
 
@@ -81,3 +86,26 @@ To fix this issue we have suggested user to re-subscribe the replication
 user initially allocated a **db.t4g.2xlarge** instance type to the database, anticipating high resource consumption. However, as the resource usage remained low over time, Turbonomic automatically downgraded the instance type to **db.t4g.large**.
 
 We will be checking the yaml of postgres CR
+
+
+## RRT
+
+**RRT 1**
+
+Cause
+
+One of the pods "creditlinedecisionapi-prod2-250904-1336-c5f4f49cb-mfh7r" out of 4 pods for creditlinedecision in aws-useast1-apps-prod-2 is throwing 500 server error when trying to access the application AccountNumberLookUp through a GTM route which points to the application in aws-useast1-apps-prod-1 & aws-useast1-apps-prod-2.
+
+This issue was only observed in the above specific pod.
+
+Resolution/Update
+
+We troubleshooted and we were able to find that the Auth token that the pod was using to access the destination was invalid. User said that she will loook from the application end and to resolve this issue immediately asked us to restart the source pod but we explained that it has to be done from their end as per protocol. They tried to restart that specific pod but they faced an issue with their call alter. Their entire team were facing an issue with call alter. Since the business hour were nearing and it was an emergency we restarted it for them with their permission.
+
+**RRT 2**
+
+Cause 
+Job is not running due to socket exception timeout
+
+Resolution
+We checked the deployment yaml, memory limit is set to low, so we asked user to increase it. then he submitted job again. post that issue got fixed
