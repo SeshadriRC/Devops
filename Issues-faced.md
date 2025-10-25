@@ -101,6 +101,7 @@ This issue was only observed in the above specific pod.
 Resolution/Update
 
 We troubleshooted and we were able to find that the Auth token that the pod was using to access the destination was invalid. User said that she will loook from the application end and to resolve this issue immediately asked us to restart the source pod but we explained that it has to be done from their end as per protocol. They tried to restart that specific pod but they faced an issue with their call alter. Their entire team were facing an issue with call alter. Since the business hour were nearing and it was an emergency we restarted it for them with their permission.
+---
 
 **RRT 2**
 
@@ -109,3 +110,25 @@ Job is not running due to socket exception timeout
 
 Resolution
 We checked the deployment yaml, memory limit is set to low, so we asked user to increase it. then he submitted job again. post that issue got fixed
+
+Cause
+
+Pods were throwing out connectivity exception error.
+
+Resolution/Update
+
+OCP-OPS were paged and we did the basic troubleshooting steps. After tunneling down step by step the application team found out that the source application in the on-prem had less timeout set which was 2 minutes. The application team update that to 4 minutes and redeployed it and tested it once again and they didn't face any issue.
+
+Destination:
+
+cluster: aws-aps1-apps-prod-1
+
+namespace: epp-dci-offshore-storage
+
+deployment: dci-cloud-save-prod
+
+database: pgsql-ec764c3b-0344-4d0e-9b32-bd66df58b9c5
+
+---
+
+
