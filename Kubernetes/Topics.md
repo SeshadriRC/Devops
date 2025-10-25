@@ -8,4 +8,5 @@
 - Sidecar Containers
 - Deploying application on kubernetes
 - Configmap not found issue
-- PVC 
+- PVC
+- Init containers
