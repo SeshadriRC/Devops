@@ -10,3 +10,10 @@
 - Configmap not found issue
 - PVC
 - Init containers
+
+
+- Links
+
+1. About init and sidecar container
+
+https://medium.com/@manojkumar_41904/understanding-init-containers-and-sidecar-containers-in-kubernetes-ca94bec10a7b
