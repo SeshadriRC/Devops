@@ -247,6 +247,14 @@ kubectl cp  /dir1/file.txt <pod-name>:/dir2/dir3 -c <container-name>
 
 ```
 
+**Secret**
+
+```
+kubectl get secret <secret-name>
+kubectl get secrets
+kubectl create secret generic news --from-file=/opt/news.txt
+```
+
 **Yaml**
 
 ```
