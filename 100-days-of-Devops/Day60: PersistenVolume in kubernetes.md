@@ -12,7 +12,8 @@ Create a node port type service named web-datacenter using node port 30008 to ex
 Note: The kubectl utility on jump_host has been configured to work with the kubernetes cluster.
 
 ## Solution
----
+
+```
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -70,3 +71,4 @@ spec:
     - port: 80
       targetPort: 80
       nodePort: 30008
+```
