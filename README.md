@@ -7,6 +7,8 @@ https://gitlab.com/nb-tech-support/devops
 
 https://www.nbtechsupport.co.in/search/label/Devops?&max-results=5
 
+https://github.com/bregman-arie/devops-resources?tab=readme-ov-file
+https://github.com/bregman-arie/devops-sre-interviews/tree/main
 
 pending learnings
 
