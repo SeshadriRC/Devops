@@ -10,6 +10,7 @@
 - Configmap not found issue
 - PVC
 - Init containers
+- Secrets
 
 
 ## Links
