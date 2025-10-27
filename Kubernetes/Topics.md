@@ -11,6 +11,7 @@
 - PVC
 - Init containers
 - Secrets
+- Namespace
 
 
 ## Links
