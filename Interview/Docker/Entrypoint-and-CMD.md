@@ -1,5 +1,8 @@
 Excellent question — this is one of the **most commonly asked** Docker interview topics. Let’s go step-by-step 👇
 
+<img width="1194" height="606" alt="image" src="https://github.com/user-attachments/assets/c68f14d5-ec79-46b8-8b1a-2a388f2465ea" />
+
+
 ---
 
 ## 🧠 Simple Explanation (Layman Terms)
