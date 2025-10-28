@@ -11,5 +11,6 @@
 - OCP cluster upgrade
 - Deploy application on kubernetes, PVC configuration, pod log troubleshooting
 - Image pullback off error/service port mismatch
-- Permission denied error
+- Roles and Rolebindings
+- Cordon and Uncordon the node
 - Podaffinity/Node-affinity
