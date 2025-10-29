@@ -65,3 +65,85 @@ spec:
           name: my-redis-config
 
 ```
+
+Perfect 👏 — that YAML you pasted is **exactly** the ConfigMap definition we used earlier.
+
+Let’s go through what each line does clearly so it makes sense to you:
+
+---
+
+### 🧩 **Line-by-line breakdown**
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+```
+
+➡️ This tells Kubernetes that we’re creating a **ConfigMap** resource.
+
+---
+
+```yaml
+metadata:
+  name: my-redis-config
+```
+
+➡️ This gives the ConfigMap a name — `my-redis-config`.
+That’s the name you’ll later reference in your **Deployment** under the `volumes:` section.
+
+---
+
+```yaml
+data:
+  redis-config: |
+    maxmemory 2mb
+```
+
+➡️ `data:` is where we define the key–value pairs that go inside the ConfigMap.
+
+Here:
+
+* The **key** is `redis-config` → it becomes the **filename** when mounted in the Pod.
+* The **value** (the content under `|`) is the file content:
+
+  ```
+  maxmemory 2mb
+  ```
+
+So when this ConfigMap is mounted as a volume, inside the container it will look like this:
+
+```
+/redis-master/redis-config  → contains the text “maxmemory 2mb”
+```
+
+---
+
+### 🧠 Think of it like this:
+
+It’s as if you had created a file manually inside the container:
+
+```bash
+echo "maxmemory 2mb" > /redis-master/redis-config
+```
+
+…but instead of baking that into the image, you’re letting Kubernetes inject it dynamically.
+
+---
+
+### ✅ To verify after applying:
+
+```bash
+kubectl apply -f redis-config.yaml
+kubectl get configmap my-redis-config -o yaml
+```
+
+You’ll see output showing your ConfigMap content:
+
+```yaml
+data:
+  redis-config: "maxmemory 2mb\n"
+```
+
+---
+
+Would you like me to show how to confirm **inside the running Redis Pod** that the file got mounted correctly (and where exactly it is)?
