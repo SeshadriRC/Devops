@@ -7,7 +7,7 @@
 - Shared Volume
 - Sidecar Containers
 - Deploying application on kubernetes
-- Configmap not found issue
+- Configmap not found issue , config map (Day 65)
 - PVC
 - Init containers
 - Secrets
