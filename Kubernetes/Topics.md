@@ -12,6 +12,7 @@
 - Init containers
 - Secrets
 - Namespace
+- Deploy database server (all topics covered - Env variables,PV,PVC,Secrets,Service)
 
 
 ## Links
