@@ -15,6 +15,7 @@ Note:
 2. After Jenkins server installation, click the Jenkins button on the top bar to access the Jenkins UI and follow on-screen instructions to create an admin user.
 
 ## Solution
+https://github.com/SeshadriRC/Devops/blob/main/100-days-of-Devops/Day67:%20Setup%20Jenkins%20Server.md
+```
+```
 
-```
-```
