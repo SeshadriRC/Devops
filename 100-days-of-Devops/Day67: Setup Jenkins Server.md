@@ -16,8 +16,8 @@ Note:
 
 ## Solution
 
-https://www.jenkins.io/doc/book/installing/linux/ -> install jenkins on linux
-https://www.jenkins.io/doc/book/installing/linux/#red-hat-centos -> install jenkins on centos
+
+https://www.jenkins.io/doc/book/installing/linux/#red-hat-centos -> install jenkins on centos, here itself we can find command to install java
 
 ```
 ssh root@jenkins
