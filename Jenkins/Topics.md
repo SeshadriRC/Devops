@@ -1,1 +1,2 @@
 - Jenkins Installations
+- Plugin installation in jenkins
