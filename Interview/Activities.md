@@ -1,7 +1,4 @@
 
-
-
-
 ## Linux
 - start and stop of services using systemctl
 - Configure Apache Web server
@@ -14,3 +11,7 @@
 - Roles and Rolebindings
 - Cordon and Uncordon the node
 - Podaffinity/Node-affinity
+
+## Jenkins
+- Jenkins Installation
+- Plugin installation in jenkins
