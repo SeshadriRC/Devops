@@ -15,6 +15,7 @@ Think of it like a “history tracker” for each line of a file in Git.
 
 It helps find **who last modified** a specific line — useful when debugging, auditing, or reviewing code changes.
 
+- adding 4th line somewhere
 ---
 
 ## 💡 **Example**
