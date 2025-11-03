@@ -1,3 +1,3 @@
 - Jenkins Installations
 - Plugin installation in jenkins
-- Configure Jenkins User Access
+- User management in Jenkins
