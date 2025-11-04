@@ -24,6 +24,8 @@ Note:
 
 ## Solution
 
+- https://www.nbtechsupport.co.in/2023/09/jenkins-install-packages-kodekloud-add.html
+
 ```
 ```
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/17e856ef-92e5-4d1c-a56f-70c217aa16f0" />
