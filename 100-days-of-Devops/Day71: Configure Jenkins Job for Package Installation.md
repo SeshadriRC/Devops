@@ -26,6 +26,15 @@ Note:
 
 ```
 ```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/17e856ef-92e5-4d1c-a56f-70c217aa16f0" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/511bd3cd-c780-4f48-8cc4-47cecd1870f7" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ac3ff575-98da-4219-8f04-43a607711553" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/98645bb4-b246-4d23-b5df-657f01de4b12" />
+
+
 
 Here’s how you can **complete the “install-packages” Jenkins job setup step by step**, following the given Nautilus task instructions:
 
