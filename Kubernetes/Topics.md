@@ -10,8 +10,9 @@
 - Configmap not found issue , config map (Day 65)
 - PVC
 - Init containers
-- Secrets
+- Secrets ( Day 62 )
 - Namespace
+- Deploy redis ( Day 65 ConfigMap )
 - Deploy database server (all topics covered - Env variables,PV,PVC,Secrets,Service)
 
 
