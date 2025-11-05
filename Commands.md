@@ -137,6 +137,7 @@ kubectl get cronjob
 **Deployment**
 ```
 kubectl explain pod.spec
+kubectl explain pod.spec --recursive
 kubectl api-resources
 kubectl create deployment nginx --image=nginx:latest
 kubectl create deployment  webapp --image=kodekloud/webapp-color --replicas=3
