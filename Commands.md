@@ -137,6 +137,7 @@ kubectl get cronjob
 **Deployment**
 ```
 kubectl create deployment nginx --image=nginx:latest
+kubectl create deployment  webapp --image=kodekloud/webapp-color --replicas=3
 kubectl describe deployment nginx
 kubectl expose pod redis --port=6379 --name=redis-service --type=ClusterIP
 kubectl get deployments
