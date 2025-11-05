@@ -136,6 +136,8 @@ kubectl get cronjob
 
 **Deployment**
 ```
+kubectl explain pod.spec
+kubectl api-resources
 kubectl create deployment nginx --image=nginx:latest
 kubectl create deployment  webapp --image=kodekloud/webapp-color --replicas=3
 kubectl describe deployment nginx
@@ -165,6 +167,11 @@ kubectl logs -f <pod-name>
 ```
 
 **Namespace**
+```
+kubectl create namespace dev-ns
+```
+
+
 
 ***view current ns***
 ```
@@ -229,6 +236,7 @@ kubectl edit pod <pod-name>
 ```
 kubectl run webapp --image=nginx
 kubectl run redis --image=redis123 --dry-run=client -o yaml > redis-definition.yaml
+kubectl run httpd --image=httpd:alpine --port=80 --expose
 Create an NGINX Pod
 
 kubectl run nginx --image=nginx
@@ -236,10 +244,12 @@ kubectl run nginx --image=nginx
 Generate POD Manifest YAML file (-o yaml). Don't create it(--dry-run)
 
 kubectl run nginx --image=nginx --dry-run=client -o yaml
+kubectl run custom-nginx --image=nginx --port=8080
 
 Create a deployment
 
 kubectl create deployment --image=nginx nginx
+
 
 Generate Deployment YAML file (-o yaml). Don't create it(--dry-run)
 
