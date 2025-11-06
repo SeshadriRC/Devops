@@ -2,3 +2,4 @@
 - Plugin installation in jenkins
 - User management in Jenkins
 - Jenkins Job configuration
+- Jenkins Scheduled Jobs ( Day 73 )
