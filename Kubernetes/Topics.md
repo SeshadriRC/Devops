@@ -21,3 +21,10 @@
 1. About init and sidecar container
 
 https://medium.com/@manojkumar_41904/understanding-init-containers-and-sidecar-containers-in-kubernetes-ca94bec10a7b
+
+
+## Course - CKAD
+
+1. Scheduler
+```
+kubectl get pods --namespace kube-system  -> it will show the status of scheduler
