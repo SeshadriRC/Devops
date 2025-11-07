@@ -161,10 +161,17 @@ kubectl rollout status deployment/nginx-deployment
 kubectl rollout history deployment/<deploy-name>
 
 
+
 k logs -f nginx-phpfpm
 kubectl logs -p <pod-name>
 kubectl logs -f <pod-name>
 
+```
+
+**Taint**
+
+```
+kubectl describe node <node-name> | grep Taint
 ```
 
 **Namespace**
