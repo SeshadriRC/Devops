@@ -3,3 +3,4 @@
 - User management in Jenkins
 - Jenkins Job configuration
 - Jenkins Scheduled Jobs ( Day 73 )
+- Mysql Database backup using jenkins ( Day 74 )
