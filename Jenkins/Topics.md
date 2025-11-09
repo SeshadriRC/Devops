@@ -4,3 +4,4 @@
 - Jenkins Job configuration
 - Jenkins Scheduled Jobs ( Day 73 )
 - Mysql Database backup using jenkins ( Day 74 )
+- Adding Slave Nodes ( Day 75 )
