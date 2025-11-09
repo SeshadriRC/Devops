@@ -29,4 +29,9 @@ You might need to install some plugins and restart Jenkins service. So, we recom
 ## Solution
 
 
-For these kind of scenarios requiring changes to be done in a web UI, please take screenshots so that you can share it with us for review in case your task is marked incomplete. You may also consider using a screen recording software such as loom.com to record and share your work.
+- Matrix authorization security plugin install
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e53af0d4-9756-4ccf-b396-ace817910941" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1592cfb0-62b4-4d5b-817e-a2d939f9736d" />
+
