@@ -1,6 +1,6 @@
 - Jenkins Installations
 - Plugin installation in jenkins
-- User management in Jenkins
+- User management in Jenkins and Security ( Day 76 )
 - Jenkins Job configuration
 - Jenkins Scheduled Jobs ( Day 73 )
 - Mysql Database backup using jenkins ( Day 74 )
