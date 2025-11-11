@@ -172,6 +172,10 @@ kubectl logs -f <pod-name>
 
 ```
 kubectl describe node <node-name> | grep Taint
+kubectl taint nodes node01 spray=mortein:NoSchedule
+
+untaint:-
+kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
 ```
 
 **Namespace**
@@ -241,6 +245,11 @@ kubectl get svc
 ```
 kubectl edit pod <pod-name>
 ```
+**kubectl label**
+
+```
+kubectl label node node01 color=blue
+```
 
 **kubectl run**
 ```
@@ -259,6 +268,7 @@ kubectl run custom-nginx --image=nginx --port=8080
 Create a deployment
 
 kubectl create deployment --image=nginx nginx
+kubectl create deployment blue --image=nginx --replicas=3
 
 
 Generate Deployment YAML file (-o yaml). Don't create it(--dry-run)
