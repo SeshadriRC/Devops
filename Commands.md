@@ -521,6 +521,10 @@ git clone /opt/blog.git /usr/src/kodekloudrepos/blog
 ```
 git config user.email
 git config user.name "max"
+
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
 ```
 
 **Git Fetch**
