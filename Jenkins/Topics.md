@@ -6,3 +6,4 @@
 - Mysql Database backup using jenkins ( Day 74 )
 - Adding Slave Nodes ( Day 75 )
 - Pipeline job ( Day 77 )
+- Jenkins Conditional Pipeline ( Day 78 )
