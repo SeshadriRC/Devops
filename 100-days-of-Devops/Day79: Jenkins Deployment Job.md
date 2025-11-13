@@ -40,6 +40,7 @@ https://www.nbtechsupport.co.in/2021/07/deployment-using-jenkins.html
 
 ## Solution
 
+```
 
 # Use sudo password non-interactively
 echo "Ir0nM@n" | sudo -S yum install -y httpd
@@ -60,6 +61,7 @@ echo "Ir0nM@n" | sudo -S systemctl restart httpd
 # Optional: Verify httpd status and port
 sudo systemctl is-active httpd && sudo ss -tuln | grep 8080
 
+```
 
 ```
 
