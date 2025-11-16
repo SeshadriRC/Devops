@@ -35,7 +35,7 @@ Note:
 
 https://www.nbtechsupport.co.in/2021/07/deployment-using-jenkins.html
 
-- Install plugins ( ssh , ssh creds, publish over SSH, Build Authorization Token Root )
+- Install plugins ( ssh , ssh creds, publish over SSH, Build Authorization Token Root, gitea )
 - add creds for all 4 users
 - add ssh for all app servers
 - publish over ssh for storage server
