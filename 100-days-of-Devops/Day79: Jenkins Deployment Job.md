@@ -35,13 +35,14 @@ Note:
 
 https://www.nbtechsupport.co.in/2021/07/deployment-using-jenkins.html
 
-- Install plugins ( ssh , ssh creds, publish over SSH, Build Authorization Token Root, gitea )
+- Install plugins ( ssh , ssh creds, publish over SSH, Build Authorization Token Root, gitea ) and ensure all plugins are installed successfully
 - add creds for all 4 users
 - add ssh for all app servers
 - publish over ssh for storage server
 -  Create a new Build Job to httpd server on all app server , find the script below
 -  Create a new jenkins build
 -  Setup githook ( https://8080-port-qnua3o3xgci6owe4.labs.kodekloud.com/buildByToken/build?job=nautilus-app-deployment&token=KODEKLOUDENGINEER )
+-  ( https://8080-port-biraehxpwa2wifed.labs.kodekloud.com/buildByToken/build?job=nautilus-app-deployment&token=KODEKLOUDENGINEER )
 
 
 ## Solution
