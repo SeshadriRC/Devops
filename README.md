@@ -15,3 +15,5 @@ https://medium.com/@bregman.arie
 pending learnings
 
 https://medium.com/@ibrahim.patel89/mastering-openshift-networking-services-routes-and-policies-explained-with-real-world-examples-4088353b4e2d
+
+
