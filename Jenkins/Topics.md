@@ -7,3 +7,4 @@
 - Adding Slave Nodes ( Day 75 )
 - Pipeline job ( Day 77 )
 - Jenkins Conditional Pipeline ( Day 78 )
+- creating webhook, creating creds for git,  deploying on storage server then it should copy to all app servers, plugins - publish over SSH, Build Authorization Token Root, gitea ( Day 79 )
