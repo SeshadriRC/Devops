@@ -577,6 +577,7 @@ git show <commit_id>  [show commit details]
 ```
 git rebase --continue
 git pull --rebase origin master
+git pull --no-rebase
 
 ```
 **Git stash**
