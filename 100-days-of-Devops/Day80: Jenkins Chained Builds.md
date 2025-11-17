@@ -47,5 +47,10 @@ Note:
 - configure git creds for sarah
 - configure creds for all 3 app server users
 - configure ssh sites for all 3 app servers
+- create a job and configure webhook for git
+  [https://8080-port-2on4fsuzmnwgd7ok.labs.kodekloud.com//buildByToken/build?job=nautilus-app-deployment&token=kodekloud]
 
+**restart httpd command**
+```
+```
 
