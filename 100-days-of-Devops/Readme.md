@@ -1,1 +1,7 @@
+- Linux ( Day 1 - Day 20 )
+- Git ( Day 21 - Day 34 )
+- Docker ( Day 35 - Day 47 )
+- Kubernetes ( Day 48 - Day 67 )
 - Jenkins ( Day 68 - Day 81 )
+- Ansible ( Day 82 - Day 93 )
+- Terraform ( Day 94 - Day 100 )
