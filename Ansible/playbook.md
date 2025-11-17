@@ -46,4 +46,15 @@ thor@jumphost ~/playbook$ cat playbook.yml
         path: /tmp/file.txt
         state: touch
 ```
+
+**Copy file to other servers**
+```yaml
+- hosts: appservers
+  become: yes
+
+  tasks:
+    - name: Copy index.html to /opt/sysops
+      copy:
+        src: /usr/src/sysops/index.html
+        dest: /opt/sysops/
 ```
