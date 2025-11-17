@@ -1,4 +1,4 @@
-- Inventory
+- Inventory, create ansible inventory
 - Playbooks
 - Modules
    ansible_doc
@@ -13,6 +13,9 @@
 - Conditionals (using when)
 - loops  (using with_items)
 - Ansible Roles
+
+
+
 
 ```
 In this lab exercise you will use below hosts. Please note down some details about these hosts as given below :
