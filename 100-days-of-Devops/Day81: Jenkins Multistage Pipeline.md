@@ -37,8 +37,134 @@ You might need to install some plugins and restart Jenkins service. So, we recom
 
 For these kind of scenarios requiring changes to be done in a web UI, please take screenshots so that you can share it with us for review in case your task is marked incomplete. You may also consider using a screen recording software such as loom.com to record and share your work.
 
+https://www.nbtechsupport.co.in/2021/07/jenkins-multi-stage-pipeline.html?m=1
 
+- install Pipeline Git, SSH plugins
+- setup git creds
 ## Solution
+Your error is **very simple**:
+
+### Jenkins cannot access `/var/www/html`
+
+because **that path exists only on the Storage Server**,
+but your pipeline is running **on Jenkins Master**, not on Storage Server.
+
+That’s why this fails:
 
 ```
+cd /var/www/html
+cd: can't cd to /var/www/html
 ```
+
+---
+
+# ✅ **Fix: Use SSH to run commands on the Storage Server**
+
+You MUST connect to the Storage Server in the Deploy stage.
+
+Storage server hostname in KodeKloud is:
+
+```
+ststor01
+```
+
+The user is usually either **natasha** or **tony** depending on the lab.
+Check by SSH:
+
+```
+ssh natasha@ststor01
+```
+
+or
+
+```
+ssh tony@ststor01
+```
+
+Usually the password is:
+
+```
+Ir0nM@n
+```
+
+---
+
+# ⭐ **Correct Jenkinsfile (working version)**
+
+Use **SSH inside the pipeline**:
+
+```groovy
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Deploy') {
+            steps {
+                echo "Deploying code to Storage Server..."
+                sh '''
+                    ssh -o StrictHostKeyChecking=no natasha@ststor01 "cd /var/www/html && sudo git pull origin master"
+                '''
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Testing website..."
+                sh '''
+                    curl -f http://stlb01:8091 | grep "Welcome to xFusionCorp Industries"
+                '''
+            }
+        }
+
+    }
+}
+```
+
+---
+
+# ✔ Why this works
+
+### 1. Jenkins runs on Jenkins master
+
+→ cannot access `/var/www/html` (exists only on Storage server)
+
+### 2. Using SSH makes Jenkins run commands **on Storage Server**, not Jenkins master
+
+→ `/var/www/html` exists there
+→ NFS sync updates all app servers automatically
+
+### 3. Test stage verifies website via load balancer
+
+---
+
+# 🔑 **Important: Create SSH Credential in Jenkins**
+
+Go to:
+
+```
+Manage Jenkins → Credentials → Global → Add Credentials
+```
+
+* Type: SSH Username with password
+* Username: natasha (or tony)
+* Password: Ir0nM@n
+* ID: **STOR_SSH**
+
+Then update Jenkinsfile to use credentials:
+
+```groovy
+steps {
+    sshagent(credentials: ['STOR_SSH']) {
+        sh '''
+            ssh -o StrictHostKeyChecking=no natasha@ststor01 "cd /var/www/html && sudo git pull origin master"
+        '''
+    }
+}
+```
+
+This is the most correct and stable solution for this KodeKloud lab.
+
+---
+
+***Configure ssh connectivity before running the job***
