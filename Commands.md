@@ -232,6 +232,7 @@ kubectl delete pod <pod-name>
 kubectl get pod,svc
 kubectl get all --selector env=prod,bu=finance,tier=frontend
 kubectl get pods -o wide
+kubectl get pods --all-namespaces -o wide
 kubectl get pods -l app=orage-app-t4q6      [using label]
 k get pods --show-labels
 k get pods --selector env=dev
