@@ -134,6 +134,11 @@ kubectl cluster-info
 kubectl get cronjob
 ```
 
+**DaemonSet**
+```
+kubectl get daemonsets --all-namespaces
+kubectl describe daemonset kube-proxy --namespace=kube-system
+```
 **Deployment**
 ```
 kubectl explain pod.spec
