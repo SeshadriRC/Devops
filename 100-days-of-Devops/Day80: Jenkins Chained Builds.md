@@ -39,6 +39,7 @@ Note:
 
 4. For these kind of scenarios requiring changes to be done in a web UI, please take screenshots so that you can share it with us for review in case your task is marked incomplete. You may also consider using a screen recording software such as loom.com to record and share your work.
 
+- https://www.nbtechsupport.co.in/2021/07/creating-chained-builds-in-jenkins.html?m=1
 
 
 ## Solution
@@ -47,10 +48,17 @@ Note:
 - configure git creds for sarah
 - configure creds for all 3 app server users
 - configure ssh sites for all 3 app servers
-- create a job and configure webhook for git
+- configure publish over ssh for storage server
+- create a job,configure build environment send files and configure webhook for git
   [https://8080-port-2on4fsuzmnwgd7ok.labs.kodekloud.com//buildByToken/build?job=nautilus-app-deployment&token=kodekloud]
+- create a down-stream job
 
 **restart httpd command**
 ```
+do below thing in each  app server
+
+sudo pkill -9 httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
 ```
 
