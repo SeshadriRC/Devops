@@ -34,3 +34,16 @@ thor@jumphost ~/playbook$ cat playbook.yml
         state: stopped
 ```
       ignore_errors: yes     # In case the service is already removed
+
+**Create file**
+```yaml
+- hosts: appservers
+  become: yes
+
+  tasks:
+    - name: Create empty file on App Server 3
+      file:
+        path: /tmp/file.txt
+        state: touch
+```
+```
