@@ -1,5 +1,6 @@
-- Inventory, create ansible inventory, install httppd ( Day 82 )
-- Copy data to other app servers ( Day 84 )
+- Inventory, create ansible inventory, install httpd, yum module ( Day 82 )
+- file module ( Day 83 )
+- Copy data to other app servers ( Day 84 ), copy module
 - Playbooks
 - Modules
    ansible_doc
