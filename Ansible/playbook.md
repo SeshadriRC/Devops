@@ -17,3 +17,20 @@ thor@jumphost ~/playbook$ cat playbook.yml
         name: httpd
         state: started
 ```
+**Uninstall httpd**
+```yaml
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: Uninstall httpd package
+      yum:
+        name: httpd
+        state: absent
+
+    - name: Ensure httpd service is stopped
+      service:
+        name: httpd
+        state: stopped
+```
+      ignore_errors: yes     # In case the service is already removed
