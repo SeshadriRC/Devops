@@ -15,6 +15,5 @@ thor@jumphost ~/playbook$ cat playbook.yml
     - name: Start service httpd
       service:
         name: httpd
-        state: startedthor@jumphost ~/playbook$ ls -lrth
-total 12K
+        state: started
 ```
