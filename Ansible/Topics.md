@@ -1,4 +1,5 @@
 - Inventory, create ansible inventory, install httppd ( Day 82 )
+- Copy data to other app servers ( Day 84 )
 - Playbooks
 - Modules
    ansible_doc
