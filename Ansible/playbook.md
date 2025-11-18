@@ -47,6 +47,31 @@ thor@jumphost ~/playbook$ cat playbook.yml
         state: touch
 ```
 
+**Create file on specific host with permissions**
+```yaml
+- hosts: app
+  become: yes
+  tasks:
+    - name: Create file /usr/src/app.txt
+      file:
+        path: /usr/src/app.txt
+        state: touch
+        mode: '0777'
+        owner: tony
+        group: tony
+      when: inventory_hostname == "stapp01"
+```
+**Remove file from specific host**
+```yaml
+- hosts: app
+  become: yes
+  tasks:
+    - name: Remove file /usr/src/app.txt on stapp01 only
+      file:
+        path: /usr/src/app.txt
+        state: absent
+      when: inventory_hostname == "stapp01"
+```
 **Copy file to other servers**
 ```yaml
 - hosts: appservers
