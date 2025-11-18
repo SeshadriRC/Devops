@@ -1,5 +1,5 @@
+cat Vagrantfile
 
-$ cat Vagrantfile
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
