@@ -28,3 +28,16 @@ https://medium.com/@manojkumar_41904/understanding-init-containers-and-sidecar-c
 1. Scheduler
 ```
 kubectl get pods --namespace kube-system  -> it will show the status of scheduler
+```
+2. Deployments
+3. Services
+4. Namespaces
+5. Manual scheduling
+6. Labels and Selectors
+7. Taints and Tolerations
+8. Node selectors
+9. Node Affinity
+10. Resource limits
+11. Daemonsets
+12. Static Pods
+13. Priority Classes
