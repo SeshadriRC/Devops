@@ -1,6 +1,7 @@
 - Inventory, create ansible inventory, install httpd, yum module ( Day 82 )
 - file module ( Day 83 )
 - Copy data to other app servers ( Day 84 ), copy module
+- Create files on app servers ( Day 85 ), file module, when w
 - Playbooks
 - Modules
    ansible_doc
