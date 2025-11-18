@@ -3,10 +3,11 @@
 
 Vagrant.configure("2") do |config|
   
-  # Base VM
   config.vm.define "minikube" do |node|
     node.vm.box = "ubuntu/jammy64"
     node.vm.hostname = "minikube"
+    
+    # Use a static IP to avoid host-only conflicts
     node.vm.network "private_network", ip: "192.168.56.50"
 
     # VM Resources
@@ -20,13 +21,13 @@ Vagrant.configure("2") do |config|
     # Disable synced folder (faster)
     node.vm.synced_folder ".", "/vagrant", disabled: true
 
-    # Install prerequisites automatically
+    # Provision VM with all prerequisites
     node.vm.provision "shell", inline: <<-SHELL
       echo "==> Updating packages"
       sudo apt-get update -y
 
       echo "==> Installing dependencies"
-      sudo apt-get install -y apt-transport-https ca-certificates curl conntrack
+      sudo apt-get install -y apt-transport-https ca-certificates curl conntrack git
 
       echo "==> Installing Docker"
       curl -fsSL https://get.docker.com | bash
@@ -42,6 +43,7 @@ Vagrant.configure("2") do |config|
       sudo dpkg -i minikube_latest_amd64.deb
       rm minikube_latest_amd64.deb
 
+      echo "==> Git installed."
       echo "==> All prerequisites installed."
       echo "==> Login and run: minikube start --driver=docker"
     SHELL
