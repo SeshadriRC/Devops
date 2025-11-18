@@ -2,15 +2,15 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  
+
   config.vm.define "minikube" do |node|
     node.vm.box = "ubuntu/jammy64"
     node.vm.hostname = "minikube"
-    
-    # Use a static IP to avoid host-only conflicts
+
+    # Static IP to avoid host-only conflicts
     node.vm.network "private_network", ip: "192.168.56.50"
 
-    # VM Resources
+    # VM resources
     node.vm.provider "virtualbox" do |vb|
       vb.name = "minikube"
       vb.memory = "4096"
@@ -18,34 +18,51 @@ Vagrant.configure("2") do |config|
       vb.customize ["modifyvm", :id, "--nested-hw-virt", "on"]
     end
 
-    # Disable synced folder (faster)
+    # Disable synced folder for speed
     node.vm.synced_folder ".", "/vagrant", disabled: true
 
-    # Provision VM with all prerequisites
+    # Provision VM (idempotent)
     node.vm.provision "shell", inline: <<-SHELL
       echo "==> Updating packages"
       sudo apt-get update -y
 
       echo "==> Installing dependencies"
-      sudo apt-get install -y apt-transport-https ca-certificates curl conntrack git
+      for pkg in apt-transport-https ca-certificates curl conntrack git; do
+        if ! dpkg -s $pkg >/dev/null 2>&1; then
+          sudo apt-get install -y $pkg
+        else
+          echo "$pkg is already installed, skipping..."
+        fi
+      done
 
       echo "==> Installing Docker"
-      curl -fsSL https://get.docker.com | bash
-      sudo usermod -aG docker vagrant
+      if ! command -v docker >/dev/null 2>&1; then
+        curl -fsSL https://get.docker.com | bash
+        sudo usermod -aG docker vagrant
+      else
+        echo "Docker is already installed, skipping..."
+      fi
 
       echo "==> Installing kubectl"
-      curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-      sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-      rm kubectl
+      if ! command -v kubectl >/dev/null 2>&1; then
+        curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+        sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+        rm kubectl
+      else
+        echo "kubectl is already installed, skipping..."
+      fi
 
       echo "==> Installing Minikube"
-      curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
-      sudo dpkg -i minikube_latest_amd64.deb
-      rm minikube_latest_amd64.deb
+      if ! command -v minikube >/dev/null 2>&1; then
+        curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+        sudo dpkg -i minikube_latest_amd64.deb
+        rm minikube_latest_amd64.deb
+      else
+        echo "Minikube is already installed, skipping..."
+      fi
 
-      echo "==> Git installed."
       echo "==> All prerequisites installed."
-      echo "==> Login and run: minikube start --driver=docker"
+      echo "==> You can now login and run: minikube start --driver=docker"
     SHELL
 
   end
