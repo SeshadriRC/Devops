@@ -1,0 +1,50 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  
+  # Base VM
+  config.vm.define "minikube" do |node|
+    node.vm.box = "ubuntu/jammy64"
+    node.vm.hostname = "minikube"
+    node.vm.network "private_network", type: "dhcp"
+
+    # VM Resources
+    node.vm.provider "virtualbox" do |vb|
+      vb.name = "minikube"
+      vb.memory = "4096"
+      vb.cpus = 2
+      vb.customize ["modifyvm", :id, "--nested-hw-virt", "on"]
+    end
+
+    # Disable synced folder (faster)
+    node.vm.synced_folder ".", "/vagrant", disabled: true
+
+    # Install prerequisites automatically
+    node.vm.provision "shell", inline: <<-SHELL
+      echo "==> Updating packages"
+      sudo apt-get update -y
+
+      echo "==> Installing dependencies"
+      sudo apt-get install -y apt-transport-https ca-certificates curl conntrack
+
+      echo "==> Installing Docker"
+      curl -fsSL https://get.docker.com | bash
+      sudo usermod -aG docker vagrant
+
+      echo "==> Installing kubectl"
+      curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+      sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+      rm kubectl
+
+      echo "==> Installing Minikube"
+      curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+      sudo dpkg -i minikube_latest_amd64.deb
+      rm minikube_latest_amd64.deb
+
+      echo "==> All prerequisites installed."
+      echo "==> Login and run: minikube start --driver=docker"
+    SHELL
+
+  end
+end
