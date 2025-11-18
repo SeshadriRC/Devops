@@ -173,6 +173,13 @@ kubectl logs -f <pod-name>
 
 ```
 
+**PriorityClasses**
+```
+kubectl get priorityclasses
+kubectl describe priorityclass system-node-critical
+kubectl get pods -o custom-columns="NAME:.metadata.name,PRIORITY:.spec.priorityClassName"
+```
+
 **Taint**
 
 ```
