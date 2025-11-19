@@ -236,6 +236,7 @@ kubectl delete pod <pod-name>
 ***get pods***
 
 ```
+kubectl get pods --namespace=kube-system   --> master node pods
 kubectl get pod,svc
 kubectl get all --selector env=prod,bu=finance,tier=frontend
 kubectl get pods -o wide
