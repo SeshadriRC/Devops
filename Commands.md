@@ -607,6 +607,11 @@ git tag -l
 
 ## Ansible
 
+**ansible**
+```
+ansible -i inventory stapp02 -m ping
+```
+
 **playbook**
 ```
 ansible-playbook <file.yaml>
