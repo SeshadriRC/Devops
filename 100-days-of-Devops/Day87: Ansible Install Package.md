@@ -25,7 +25,7 @@ ssh-copy-id tony@stapp01
 
 ```
 
----
+```yaml
 - name: Install zip on all app servers
   hosts: appservers
   become: yes
@@ -34,3 +34,8 @@ ssh-copy-id tony@stapp01
       yum:
         name: zip
         state: present
+    - name: Install wget package
+      yum:
+        name: wget
+        state: present
+```
