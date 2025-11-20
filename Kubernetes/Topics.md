@@ -42,4 +42,4 @@ kubectl get pods --namespace kube-system  -> it will show the status of schedule
 12. Static Pods
 13. Priority Classes
 14. Multiple Schedulers
-15. Priority Classes
+15. Scheduler profiles
