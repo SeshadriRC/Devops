@@ -3,6 +3,7 @@
 - Copy data to other app servers ( Day 84 ), copy module
 - Create files on app servers ( Day 85 ), file module, when module
 - Ping Module ( Day 86 )
+- Install package - zip ( Day 87 )
 - Playbooks
 - Modules
    ansible_doc
