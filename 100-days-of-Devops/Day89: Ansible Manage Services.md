@@ -20,6 +20,10 @@ Note: Validation will try to run playbook using command ansible-playbook -i inve
 ## Solution
 
 ```
+ansible-vault encrypt_string 'Ir0nM@n' --name ansible_become_password
+```
+
+```
 thor@jumphost ~/ansible$ cat inventory
 [appservers]
 stapp01 ansible_host=172.16.238.10 ansible_ssh_pass=Ir0nM@n ansible_user=tony
