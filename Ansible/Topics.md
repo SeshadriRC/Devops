@@ -4,6 +4,7 @@
 - Create files on app servers ( Day 85 ), file module, when module
 - Ping Module ( Day 86 )
 - Install package - zip ( Day 87 ) -> here we will use yum module
+- Blockinfile Module - Day 88
 - Playbooks
 - Modules
    ansible_doc
