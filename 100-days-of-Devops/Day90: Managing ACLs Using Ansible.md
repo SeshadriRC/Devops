@@ -88,3 +88,23 @@ cat: cat: No such file or directory
       when: inventory_hostname == "stapp03"
 thor@jumphost ~/ansible$ 
 ```
+
+**Output**
+
+```
+[steve@stapp02 devops]$ getfacl /opt/devops/story.txt
+getfacl: Removing leading '/' from absolute path names
+# file: opt/devops/story.txt
+# owner: root
+# group: root
+user::rw-
+user:steve:rw-
+group::r--
+mask::rw-
+other::r--
+
+[steve@stapp02 devops]$ ls -lrth 
+total 0
+-rw-rw-r--+ 1 root root 0 Nov 23 13:00 story.txt
+[steve@stapp02 devops]$ 
+```
