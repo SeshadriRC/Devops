@@ -45,9 +45,10 @@ stapp03 ansible_host=172.16.238.12 ansible_ssh_pass=BigGr33n ansible_user=banner
 ```
 
 ```yaml
+thor@jumphost ~/ansible$ cat playbook.yml
 ---
 - name: Install and configure httpd on all app servers
-  hosts: app_servers
+  hosts: appservers
   become: yes
 
   tasks:
@@ -62,6 +63,11 @@ stapp03 ansible_host=172.16.238.12 ansible_ssh_pass=BigGr33n ansible_user=banner
         name: httpd
         state: started
         enabled: yes
+   
+    - name: add index.html file
+      file:
+        path: /var/www/html/index.html
+        state: touch
 
     - name: Insert sample content into index.html
       blockinfile:
@@ -83,4 +89,6 @@ stapp03 ansible_host=172.16.238.12 ansible_ssh_pass=BigGr33n ansible_user=banner
       file:
         path: /var/www/html/index.html
         mode: "0655"
+
+thor@jumphost ~/ansible$ 
 ```
