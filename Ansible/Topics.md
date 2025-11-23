@@ -6,6 +6,7 @@
 - Install package - zip ( Day 87 ) -> here we will use yum module
 - Blockinfile Module - Day 88
 - Ansbile-vault encrypt, ansible_become_password, ansible_become_method - Day 89
+- ACL control - Day 90
 - Playbooks
 - Modules
    ansible_doc
