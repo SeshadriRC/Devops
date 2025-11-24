@@ -48,3 +48,5 @@ kubectl get pods --namespace kube-system  -> it will show the status of schedule
 16. Scheduler profiles
 17. Admission Controllers
 18. Validating and Mutating Admission controllers
+
+## Logging and Monitoring
