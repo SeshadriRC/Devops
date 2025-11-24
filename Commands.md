@@ -329,6 +329,10 @@ kubectl cp  /dir1/file.txt <pod-name>:/dir2/dir3 -c <container-name>
 kubectl get secret <secret-name>
 kubectl get secrets
 kubectl create secret generic news --from-file=/opt/news.txt
+
+kubectl -n webhook-demo create secret tls webhook-server-tls \
+    --cert "/root/keys/webhook-server-tls.crt" \
+    --key "/root/keys/webhook-server-tls.key"
 ```
 
 **Yaml**
