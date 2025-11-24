@@ -35,6 +35,21 @@ Note: Validation will try to run the playbook using command ansible-playbook -i 
 Here is the **correct and working Ansible playbook** for the given requirements.
 Save this file as:
 
+**Inventory**
+```
+thor@jumphost ~/ansible$ cat inventory
+[appservers]
+stapp01 ansible_host=172.16.238.10 ansible_ssh_pass=Ir0nM@n ansible_user=tony
+stapp02 ansible_host=172.16.238.11 ansible_ssh_pass=Am3ric@ ansible_user=steve
+stapp03 ansible_host=172.16.238.12 ansible_ssh_pass=BigGr33n ansible_user=banner
+
+[appservers:vars]
+ansible_become=true
+ansible_become_method=sudo
+ansible_become_password=$ANSIBLE_VAULT;1.1;AES256 343533663262306436613839616633633232613163656363313130363263363839356637646432343831383335313233303564663434363532343230616337360a393939363062633234323335633035616661336462383261306135343331363139346234303637656663393339346366346364393234633436386539663035660a6638346632333163363662333830303836376363383366303262646331376366
+thor@jumphost ~/ansible$ 
+```
+
 **/home/thor/ansible/playbook.yml**
 
 ---
