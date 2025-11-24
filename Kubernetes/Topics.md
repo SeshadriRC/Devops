@@ -32,14 +32,19 @@ kubectl get pods --namespace kube-system  -> it will show the status of schedule
 2. Deployments
 3. Services
 4. Namespaces
-5. Manual scheduling
-6. Labels and Selectors
-7. Taints and Tolerations
-8. Node selectors
-9. Node Affinity
-10. Resource limits
-11. Daemonsets
-12. Static Pods
-13. Priority Classes
-14. Multiple Schedulers
-15. Scheduler profiles
+
+## Scheduling
+
+6. Manual scheduling
+7. Labels and Selectors
+8. Taints and Tolerations
+9. Node selectors
+10. Node Affinity
+11. Resource limits
+12. Daemonsets
+13. Static Pods
+14. Priority Classes
+15. Multiple Schedulers
+16. Scheduler profiles
+17. Admission Controllers
+18. Validating and Mutating Admission controllers
