@@ -15,16 +15,18 @@ d. The user/group owner of /var/www/html/index.html file must be respective sudo
 
 Note: Validation will try to run the playbook using command ansible-playbook -i inventory playbook.yml so please make sure the playbook works this way without passing any extra arguments.
 
+**Note**: I failed in first attempt, so instead of server 3 use server 1
 
 ## Solution
 
 ```
-thor@jumphost ~/ansible$ cat playbook.yml 
+thor@jumphost ~/ansible$ cat playbook.yml
 ---
-- hosts: stapp03
+- hosts: stapp01 
   become: yes
+  become_user: root
   roles:
-    - httpd
+    - role/httpd
 
 thor@jumphost ~/ansible$ cat inventory
 stapp01 ansible_host=172.16.238.10 ansible_user=tony ansible_ssh_pass=Ir0nM@n ansible_become_pass=Ir0nM@n
