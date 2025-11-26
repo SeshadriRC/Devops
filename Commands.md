@@ -359,6 +359,8 @@ apt-get install -y apache2
 
 ```
 
+### Vi editor
+
 **Copy and Paste**
 
 ```
@@ -377,6 +379,11 @@ Move the cursor to the line below where you want to paste
 Press p → this pastes the cut block below the cursor
 ```
 
+**Replace in vi editor**
+
+```
+:%s/old/new/g
+```
 **Crontab**
 
 ```
