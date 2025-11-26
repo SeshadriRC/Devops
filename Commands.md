@@ -170,6 +170,7 @@ kubectl rollout history deployment/<deploy-name>
 k logs -f nginx-phpfpm
 kubectl logs -p <pod-name>
 kubectl logs -f <pod-name>
+kubectl logs -f pod-name -c container-name
 
 ```
 
@@ -178,6 +179,12 @@ kubectl logs -f <pod-name>
 kubectl get priorityclasses
 kubectl describe priorityclass system-node-critical
 kubectl get pods -o custom-columns="NAME:.metadata.name,PRIORITY:.spec.priorityClassName"
+```
+
+**Resource management**
+```
+kubectl top nodes
+kubectl top pods
 ```
 
 **Taint**
