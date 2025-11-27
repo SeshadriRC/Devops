@@ -9,4 +9,22 @@ Note: Right-click under the EXPLORER section in VS Code and select Open in Integ
 # Solution
 
 ```
+main.tf
+--------
+resource "aws_vpc" "xfusion_vpc" {
+  cidr_block = "10.0.0.0/16"   # any CIDR block is fine
+  tags = {
+    Name = "xfusion-vpc"
+  }
+}
+
+save it
+
+terraform init
+terraform validate
+terraform plan
+terraform apply
+
 ```
+
+
