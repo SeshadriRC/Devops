@@ -13,3 +13,11 @@ Note:
 1. To access the jenkins server, connect from the jump host using the root user with the password S3curePass.
 
 2. After Jenkins server installation, click the Jenkins button on the top bar to access the Jenkins UI and follow on-screen instructions to create an admin user.
+
+
+# Solution
+
+
+- Login to the Jenkins server
+- Navigate to Jenkins website and install it [Website](https://www.jenkins.io/doc/book/installing/linux/#red-hat-stable)
+
