@@ -13,6 +13,13 @@ showcreds
 aws ec2 describe-key-pairs --query "KeyPairs[*].[KeyName]" --output table
 ```
 
+<img width="1919" height="344" alt="image" src="https://github.com/user-attachments/assets/25feb66c-8328-43f9-86f6-5c32c902437b" />
+
+
+-private key will get downloaded automatically, after creation
+<img width="1143" height="99" alt="image" src="https://github.com/user-attachments/assets/0fc815ca-eef7-4ad7-9236-7521f32b4642" />
+
+
 Doing it in the **AWS Console** is very simple. Follow the steps below.
 
 ---
