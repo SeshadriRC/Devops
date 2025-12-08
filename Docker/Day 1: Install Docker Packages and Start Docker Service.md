@@ -10,6 +10,9 @@ Initiate the docker service.
 
 https://www.nbtechsupport.co.in/2021/07/install-docker-package.html
 
+
+https://docs.docker.com/engine/install/centos/
+
 ```
 1. Login on the App server given in task & switch to root user
 
