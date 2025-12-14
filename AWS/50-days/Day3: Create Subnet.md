@@ -12,6 +12,9 @@ For this task, create one subnet named devops-subnet under default VPC.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c05d1858-81c5-4d49-a694-dac0665f0001" />
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2d5d676e-125c-46ed-adaf-0a5fddfc8dc6" />
+
+
 
 ---
 Below are **clear, step-by-step instructions** to create **one subnet named `devops-subnet` under the default VPC**, using **both AWS Console and AWS CLI**.
