@@ -6,13 +6,18 @@ For this task, create one subnet named devops-subnet under default VPC.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e731c79d-4a47-4f72-8270-2aafb8499805" />
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cb76b8d3-f442-4cd4-b039-11165c9a1af0" />
+
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/73a9526e-a137-410d-a263-99e0def6e3e3" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/40e9a5d6-bdd9-4e5c-92d1-5a876e7afcea" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c05d1858-81c5-4d49-a694-dac0665f0001" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2d5d676e-125c-46ed-adaf-0a5fddfc8dc6" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/292dc627-c85b-4046-b65c-57862ef373c7" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/64168137-05f5-4bc9-a8bb-eb2b3d50822e" />
 
 
 
@@ -107,10 +112,10 @@ us-east-1a
 
 ```bash
 aws ec2 create-subnet \
-  --vpc-id vpc-0abc1234def567890 \
-  --cidr-block 172.31.50.0/24 \
+  --vpc-id vpc-0491678b962cfdb50 \
+  --cidr-block 172.31.97.0/24 \
   --availability-zone us-east-1a \
-  --tag-specifications 'ResourceType=subnet,Tags=[{Key=Name,Value=devops-subnet}]'
+  --tag-specifications 'ResourceType=subnet,Tags=[{Key=Name,Value=devops-subnet2}]'
 ```
 
 ---
