@@ -1,5 +1,6 @@
 - docker ce and docker compose installation
 - run the container
+- [stop and remove the container](#stop-and-remove-the-container)
 - copy the file to container
 - docker commit
 - docker tagging
@@ -11,4 +12,8 @@
 
  
 
-  
+  # Stop and remove the container
+
+  ```
+  docker rm -f kke-container
+  ```
