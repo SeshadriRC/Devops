@@ -119,8 +119,17 @@ You need to move these jobs:
 
 If you want, I can also provide **exact screenshot checkpoints** or **common issues during job move**.
 
+---
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/eb4655ac-bcb9-4e77-835c-245ccd488ae2" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0f4ebcb3-76b0-4d0b-acc0-6c5db6d7cda5" />
+<img width="1914" height="468" alt="image" src="https://github.com/user-attachments/assets/e549e9c6-6e15-49f5-bd5d-0e3e11b295f2" />
+<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/79ad44f6-30c2-4a35-afe0-e220332197aa" />
 
+- Leave description as it is
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/391f8f90-5d93-4e89-8f90-3b9811cae880" />
 
+- go to job and move it
+
+<img width="1919" height="602" alt="image" src="https://github.com/user-attachments/assets/85768d68-d362-4b31-ba66-ee8d0ec7332b" />
+<img width="1919" height="488" alt="image" src="https://github.com/user-attachments/assets/a967fce1-968f-4cff-a6c5-9e8f590dba20" />
+<img width="1897" height="797" alt="image" src="https://github.com/user-attachments/assets/82a30ee8-0ff5-4d49-909a-fd07792db771" />
