@@ -67,6 +67,7 @@ If you want, I can also guide you on **attaching this volume to an EC2 instance*
 <img width="1919" height="824" alt="image" src="https://github.com/user-attachments/assets/4912ef14-d5d6-4e16-9b91-cbb5cc544521" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/45777f2b-0beb-42e0-990d-b4c3960dc17c" />
 <img width="1919" height="779" alt="image" src="https://github.com/user-attachments/assets/b741955b-9b24-4df4-a5c2-211140f25f84" />
+<img width="1876" height="313" alt="image" src="https://github.com/user-attachments/assets/378f6b69-ec5b-4e05-9d08-452428da1e58" />
 
 
 
