@@ -16,7 +16,20 @@ Below is the **exact and safe setup** that works with
 
 ---
 
-- from my end i added ssh-key files
+- from my end i added ssh-key files and inventory modifications
+
+```
+ssh-keygen
+ssh-copy-id tony@stbkp01
+```
+
+```
+thor@jumphost ~$ cat inventory
+[app]
+stapp01 ansible_user=tony
+stapp02 ansible_user=steve
+stapp03 ansible_user=banner
+```
 
 ## a. Inventory file
 
