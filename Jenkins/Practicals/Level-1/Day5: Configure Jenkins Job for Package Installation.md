@@ -119,6 +119,9 @@ If you want, I can also explain:
 
 ---
 
+plugins
+https://www.nbtechsupport.co.in/2023/09/jenkins-install-packages-kodekloud-add.html
+
 <img width="1919" height="626" alt="image" src="https://github.com/user-attachments/assets/e4035458-4645-42bd-8a52-d52370933688" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ce10ae29-6bdc-482b-89a2-11ab237aa622" />
