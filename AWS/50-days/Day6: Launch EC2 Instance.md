@@ -247,6 +247,9 @@ If you want **screenshots guidance**, **troubleshooting**, or **how to SSH into 
 <img width="843" height="699" alt="image" src="https://github.com/user-attachments/assets/95701b20-a1ee-4ddc-bfca-3c8ff226b3aa" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/428d3ab3-a082-4351-ace6-049e210e1656" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0c288154-d27f-40d7-94da-d169d2302698" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1ab183e4-3581-4930-a599-2e79cabb0e8a" />
+<img width="1919" height="505" alt="image" src="https://github.com/user-attachments/assets/8439508b-c832-45ef-9623-97817a21bb62" />
+<img width="1918" height="438" alt="image" src="https://github.com/user-attachments/assets/9598a4f2-b16e-4a12-9e4b-8cbbd637dae5" />
 
 
 
