@@ -238,11 +238,16 @@ If you want **screenshots guidance**, **troubleshooting**, or **how to SSH into 
 
 ---
 
-- No key pair
+- No key pair. only configure whatever given in question, remaining networking configuration leave it as same
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/61b28c85-ea51-4ca9-a775-e8b719abd9b6" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3796a6eb-1a76-4f91-b10c-158322a9a43c" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f3ce218b-e7ab-4a0b-97f6-b463b6789547" />
+<img width="1919" height="664" alt="image" src="https://github.com/user-attachments/assets/943dc3ad-8eac-4d35-9ff0-6ca705785741" />
+<img width="843" height="699" alt="image" src="https://github.com/user-attachments/assets/95701b20-a1ee-4ddc-bfca-3c8ff226b3aa" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/428d3ab3-a082-4351-ace6-049e210e1656" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0c288154-d27f-40d7-94da-d169d2302698" />
+
 
 
 
