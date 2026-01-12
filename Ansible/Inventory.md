@@ -1,5 +1,12 @@
 
 ```
+[app]
+stapp01 ansible_user=tony owner=tony
+stapp02 ansible_user=steve owner=steve
+stapp03 ansible_user=banner owner=banner
+```
+
+```
 # Sample Inventory File 1
 
 server1.company.com
