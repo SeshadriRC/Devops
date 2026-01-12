@@ -7,7 +7,7 @@
 - Copy file from host to docker container  (both excercise and cert)
 - Troubleshoot docker container issue     (both excercise and cert)
 
-  **cert**
+### Cert
 - Overwrite the default CMD
 - Copy file from docker container to host
 - Cleanup docker images
