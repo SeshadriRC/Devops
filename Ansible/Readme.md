@@ -8,12 +8,12 @@
 ### Certification
 - Ansible config file location configuration
 - default ssh user (remote_user) configuration in default ansible config file
-- copying file from one location to another on same server  - copy module 
-- update file permissions - file module used
-- create directory - file module used
+- copying file from one location to another on same server  - **copy** module 
+- update file permissions - **file** module used
+- create directory - **file** module used
 - test ansible ping
 - updating inventory file
-- Generate file on same localhost using copy module
-- Install the zlib package using yum
+- Generate file on same localhost using **copy** module
+- Install the zlib package using **yum** module
 
 ---
