@@ -16,3 +16,7 @@
 - docker network remove
 
 ---
+
+## Level-2
+
+- Pull docker image and tag it
