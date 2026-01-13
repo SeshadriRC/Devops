@@ -1,5 +1,11 @@
----
+# Practicals
 
+## Level-1
+
+- Create Ansible-playbook/inventory
+- Configure default SSH user
+
+### Certification
 - Ansible config file location configuration
 - default ssh user (remote_user) configuration in default ansible config file
 - copying file from one location to another on same server  - copy module 
@@ -9,3 +15,5 @@
 - updating inventory file
 - Generate file on same localhost using copy module
 - Install the zlib package using yum
+
+---
