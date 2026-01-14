@@ -19,4 +19,4 @@
 
 ## Level - 2
 
-- create a non-bare repo  --> [non-bare](https://github.com/SeshadriRC/Devops-Learnings/blob/main/My-Learnings/Git/kodekloud-concepts/bare-non-bare.md)
+- Create a non-bare repo  --> [non-bare](https://github.com/SeshadriRC/Devops-Learnings/blob/main/My-Learnings/Git/kodekloud-concepts/bare-non-bare.md)
