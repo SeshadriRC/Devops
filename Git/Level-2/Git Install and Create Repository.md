@@ -24,6 +24,7 @@ ssh <user>@storage-server
 ## 2️⃣ Install Git using yum
 
 ```bash
+sudo su -
 sudo yum install -y git
 ```
 
@@ -33,19 +34,6 @@ Verify installation:
 git --version
 ```
 
----
-
-## 3️⃣ Create the repository directory
-
-```bash
-sudo mkdir -p /opt/ecommerce.git
-```
-
-(Optional: ensure correct permissions)
-
-```bash
-sudo chown -R $(whoami):$(whoami) /opt/ecommerce.git
-```
 
 ---
 
