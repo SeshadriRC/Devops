@@ -91,5 +91,30 @@ If you want, I can also show:
 **Myoutput**
 
 ```
+sudo yum install -y git
+sudo mkdir -p /opt/ecommerce.git
+
+[natasha@ststor01 ecommerce.git]$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /opt/ecommerce.git/.git/
+
+
+[natasha@ststor01 ecommerce.git]$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+[natasha@ststor01 ecommerce.git]$ ls -a
+.  ..  .git
 
 ```
