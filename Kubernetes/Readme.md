@@ -1,1 +1,10 @@
-- https://kubernetes.io/docs/reference/kubectl/
+# Practicals
+
+## Level-1
+
+---
+
+## Level-2
+
+- Shared volumes
+- Sidecar containers
